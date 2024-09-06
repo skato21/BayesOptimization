@@ -1,0 +1,25 @@
+X
+LIiMG:PY_12_2:IWRITE:KBP, -2.044, -1.044, 1.238
+LIiMG:PX_13_2:IWRITE:KBP, -1.751, -0.751, -0.237
+LIiMG:PX_R0_63:IWRITE:KBP, -2.817, -1.817, -2.984
+LIiMG:PY_R0_63:IWRITE:KBP, -0.177, 0.823, -1.018
+LIiMG:PX_13_5:IWRITE:KBP, -8.936, -7.936, -7.897
+LIiMG:PY_13_5:IWRITE:KBP, 6.961, 7.961, 6.585
+LIiEV:SB_C:KBPPHASE, 0.000, 5.000, 102.700
+
+Y
+LIiBM:SP_15_T_1:ISNGL:KBP, Q1
+LIiBM:SP_16_5_1:ISNGL:KBP, Q2
+
+YsettngText{
+}
+function{
+-(Q1/4+Q2)
+}
+repetition:5.0
+dataN:10
+iterN:50
+WaitTime:1.0
+method:Baysian
+acquisition_weight:1.0
+initial_value_range:20.0

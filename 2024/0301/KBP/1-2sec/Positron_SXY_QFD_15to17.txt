@@ -1,0 +1,22 @@
+X
+LIiMG:QF_16_41:IWRITE, 0.000, 5.000, 15.808
+LIiMG:QD_16_42:IWRITE, 0.000, 5.000, 36.959
+LIiMG:PX_16_5:IWRITE:KBP, 0.000, 2.000, 0.000
+LIiMG:PY_16_5:IWRITE:KBP, 0.000, 2.000, 1.000
+
+Y
+LIiBM:SP_15_T_1:ISNGL:KBP, Qe
+LIiBM:SP_16_5_1:ISNGL:KBP, Q1
+LIiBM:SP_17_2_1:ISNGL:KBP, Q2
+LIiBM:SP_17_44_1:ISNGL:KBP, Q3
+
+YsettngText{
+}
+function{
+-(Q1+Q2+Q3)/Qe
+}
+repetition:5.0
+dataN:20
+iterN:50
+WaitTime:3.0
+acquisition_weight:1.0

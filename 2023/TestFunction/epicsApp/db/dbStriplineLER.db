@@ -1,0 +1,24 @@
+record(ao, "BMLD07:INJ:X")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ao, "BMLD07:INJ:Y")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ao, "BMLD07:INJ:Q")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}

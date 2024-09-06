@@ -1,0 +1,37 @@
+record(ai, "TEST:X")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+	field(FTVL, "DOUBLE")
+}
+record(ai, "TEST:Y")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+	field(FTVL, "DOUBLE")
+}
+record(ai, "TEST:Z")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "TEST:ZCOPY")
+	field(PREC, "5")
+	field(FTVL, "DOUBLE")
+}
+record(ai, "TEST:ZCOPY")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")	
+	field(INP,  "TEST:Z")
+	field(FTVL, "DOUBLE")
+}

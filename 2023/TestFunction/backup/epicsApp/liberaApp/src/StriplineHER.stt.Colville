@@ -1,0 +1,86 @@
+program StriplineHER
+
+%%#include <stdio.h>
+%%#include <stdlib.h>
+%%#include <assert.h>
+%%#include <time.h>
+%%#include <math.h>
+%%#include <unistd.h>
+%%#include "MT.h"
+
+double X0, X1, X2, X3, Y;
+/*--- HER (D8) ---*/
+assign X0 to "TEST:X0";
+assign X1 to "TEST:X1";
+assign X2 to "TEST:X2";
+assign X3 to "TEST:X3";
+assign Y  to "TEST:Y";
+
+monitor X0;
+monitor X1;
+monitor X2;
+monitor X3;
+
+%{
+  double x0;
+  double x1;
+  double x2;
+  double x3;
+  double y;
+
+  double Uniform(void)
+  {
+    return genrand_real3();
+  }
+
+  double rand_Lnormal(double mu, double sigma)
+  {
+    double y= mu + sigma*sqrt(-2.0*log(Uniform()))*sin(2.0*M_PI*Uniform());//gauss random number
+    return exp(y);
+  }
+}%
+
+ss her_stripline {
+
+  /*--- Initialization ---*/
+  state init {
+    when ()
+    {
+      pvGet(X0);
+      pvGet(X1);
+      pvGet(X2);
+      pvGet(X3);
+
+      printf("StriplineHER initialization done.\n");
+
+      %{
+        init_genrand((unsigned)time(NULL));
+      }%
+    }
+    state fit
+  }
+
+  /*--- Fit ---*/
+  state fit {
+    when ()
+    {
+      x0 = X0;
+      x1 = X1;
+      x2 = X2;
+      x3 = X3;
+
+      %{
+	y  = 100.*pow(X0*X0 - X1, 2.) + pow(X0 - 1.,2.) + pow(X2 - 1.,2.) + 90.*pow(X2*X2 - X3, 2.) + 10.1 * (pow(X1 - 1., 2.) + pow(X3 - 1., 2.)) + 19.8 * (X1 - 1.)*(X3 - 1.);
+	y += rand_Lnormal(0., 1.e-4);
+      }%
+
+      Y = y;
+      pvPut(Y);
+
+      %{
+        usleep(0.1e+6);
+      }%
+    }
+    state fit
+  }
+}

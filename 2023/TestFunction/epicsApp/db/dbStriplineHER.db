@@ -1,0 +1,138 @@
+record(ai, "TEST:X0")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X1")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X2")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X3")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X4")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X5")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X6")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:X7")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+record(ai, "TEST:LM0")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:LM1")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:LM2")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:TH0")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:TH1")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:TH2")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")
+}
+
+record(ai, "TEST:Y")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "TEST:YCOPY")
+	field(PREC, "5")
+#	field(FTVL, "DOUBLE")
+}
+
+record(ai, "TEST:YCOPY")
+{
+	field(DESC, "Analog output record")
+	field(SCAN, "Passive")
+	field(DTYP, "Soft Channel")
+	field(FLNK, "0.0")
+	field(PREC, "5")	
+	field(INP,  "TEST:Y")
+#	field(FTVL, "DOUBLE")
+}

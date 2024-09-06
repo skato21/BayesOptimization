@@ -1,0 +1,11 @@
+def Haltmann6D_EPICS_fun(inputs):
+    caput ('TEST:X0', inputs["x0"])
+    caput ('TEST:X1', inputs["x1"])
+    caput ('TEST:X2', inputs["x2"])
+    caput ('TEST:X3', inputs["x3"])
+    caput ('TEST:X4', inputs["x4"])
+    caput ('TEST:X5', inputs["x5"])
+    time.sleep (0.1)
+    return{"f": caget('TEST:Y')}
+
+print(Haltmann6D_EPICS_fun(0.5,0.5,0.5,0.5,0.5,0.5))

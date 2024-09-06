@@ -1,0 +1,110 @@
+program StriplineHER
+
+%%#include <stdio.h>
+%%#include <stdlib.h>
+%%#include <assert.h>
+%%#include <time.h>
+%%#include <math.h>
+%%#include <unistd.h>
+%%#include "MT.h"
+
+double X0, X1, Y, TH0, LM0, LM1, LM2;
+/*--- HER (D8) ---*/
+assign X0 to "TEST:X0";
+assign X1 to "TEST:X1";
+assign Y  to "TEST:Y";
+assign TH0 to "TEST:TH0";
+assign LM0 to "TEST:LM0";
+assign LM1 to "TEST:LM1";
+assign LM2 to "TEST:LM2";
+
+monitor X0;
+monitor X1;
+monitor TH0;
+monitor LM0;
+monitor LM1;
+monitor LM2;
+
+%{
+  double x0;
+  double x1;
+  double y;
+  double th0;
+  double lm0;
+  double lm1;
+  double lm2;
+
+  double Uniform(void)
+  {
+    return genrand_real3();
+  }
+
+  double rand_Lnormal(double mu, double sigma)
+  {
+    double y= mu + sigma*sqrt(-2.0*log(Uniform()))*sin(2.0*M_PI*Uniform());//gauss random number
+    return y;
+  }
+}%
+
+ss her_stripline {
+
+  /*--- Initialization ---*/
+  state init {
+    when ()
+    {
+      pvGet(X0);
+      pvGet(X1);
+
+      printf("StriplineHER initialization done.\n");
+
+      %{
+        init_genrand((unsigned)time(NULL));
+      }%
+    }
+    state fit
+  }
+
+  /*--- Fit ---*/
+  state fit {
+    when ()
+    {
+      x0 = X0;
+      x1 = X1;
+
+      %{
+        // Calculate the function value for Y
+        y = pow(X1 - 5.1/(4.*pow(M_PI,2.)) * pow(X0,2.) + 5./M_PI * X0 - 6., 2.) + 10 * (1. - 1./(8.*M_PI)) * cos(X0) + 10. 
+        + rand_Lnormal(0., 1.e-3);
+      }%
+
+      Y = y;
+      pvPut(Y);
+
+      %{
+        // Calculate the expected y value on the line for the given x0
+        double expected_y = x0 + 5;
+
+        // Calculate the distance from the point (x0, x1) to the line y = x + 5
+        double distance_to_line = fabs(x1 - expected_y) / sqrt(1 + pow(1, 2));
+
+        // Update LM0 based on the distance
+        lm0 = distance_to_line + rand_Lnormal(0., 1.e-3);
+      }%
+
+      LM0 = lm0;
+      pvPut(LM0);
+
+      TH0 = rand_Lnormal(0., 1.e-3);
+      LM1 = rand_Lnormal(0., 1.e-3);
+      LM2 = rand_Lnormal(0., 1.e-3);
+      pvPut(TH0);
+      pvPut(LM1);
+      pvPut(LM2);
+
+      %{
+        usleep(100000);
+      }%
+    }
+    state fit
+  }
+}

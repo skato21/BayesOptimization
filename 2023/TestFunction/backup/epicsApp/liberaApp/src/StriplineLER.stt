@@ -1,0 +1,99 @@
+program StriplineLER
+
+%%#include <stdio.h>
+%%#include <stdlib.h>
+%%#include <assert.h>
+%%#include <time.h>
+%%#include "fitfunc.h"
+
+double MEASV1, MEASV2, MEASV3, MEASV4;
+/*--- LER (D7) ---*/
+assign MEASV1 to "BMLD07:signals:sp.va";
+assign MEASV2 to "BMLD07:signals:sp.vb";
+assign MEASV3 to "BMLD07:signals:sp.vc";
+assign MEASV4 to "BMLD07:signals:sp.vd";
+monitor MEASV1;
+monitor MEASV2;
+monitor MEASV3;
+monitor MEASV4;
+
+double MEASV1_OLD, MEASV2_OLD, MEASV3_OLD, MEASV4_OLD;
+double SUMMEASV;
+assign SUMMEASV to "BMLD07:INJ:Q";
+
+double POSX, POSY;
+assign POSX to "BMLD07:INJ:X";
+assign POSY to "BMLD07:INJ:Y";
+
+%{
+  void *obj;
+  double v1meas;
+  double v2meas;
+  double v3meas;
+  double v4meas;
+  double posx;
+  double posy;
+}%
+
+ss ler_stripline {
+
+  /*--- Initialization ---*/
+  state init {
+    when ()
+    {
+      %{
+        /* Create object and initialize */
+        obj = new_object();
+        call_init(obj, "bemmap_ler.dat");
+      }%
+
+      pvGet(MEASV1);
+      pvGet(MEASV2);
+      pvGet(MEASV3);
+      pvGet(MEASV4);
+
+      MEASV1_OLD = MEASV1;
+      MEASV2_OLD = MEASV2;
+      MEASV3_OLD = MEASV3;
+      MEASV4_OLD = MEASV4;
+
+      printf("StriplineLER initialization done.\n");
+    }
+    state fit
+  }
+
+  /*--- Fit ---*/
+  state fit {
+    when ((MEASV1 != MEASV1_OLD) ||
+          (MEASV2 != MEASV2_OLD) ||
+          (MEASV3 != MEASV3_OLD) ||
+          (MEASV4 != MEASV4_OLD))
+    {
+      /* printf("DEBUG %f %f\n", MEASV1_OLD, MEASV1); */
+
+      SUMMEASV = MEASV1 + MEASV2 + MEASV3 + MEASV4;
+      v1meas = MEASV1;
+      v2meas = MEASV2;
+      v3meas = MEASV3;
+      v4meas = MEASV4;
+
+      %{
+        call_fit(obj, &v1meas, &v2meas, &v3meas, &v4meas, &posx, &posy);
+      }%
+
+      /* copy current values */
+      MEASV1_OLD = MEASV1;
+      MEASV2_OLD = MEASV2;
+      MEASV3_OLD = MEASV3;
+      MEASV4_OLD = MEASV4;
+
+      /* put the best-fit values (mm) to the EPICS record. */
+      POSX = -posx;
+      POSY =  posy;
+      pvPut(POSX);
+      pvPut(POSY);
+      pvPut(SUMMEASV);
+    }
+    state fit
+  }
+}

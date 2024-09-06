@@ -1,0 +1,8 @@
+# Example substitutions file
+
+file "db/dbStriplineLER.db" {
+    { user = "mitsuka" }
+}
+file "db/dbStriplineHER.db" {
+    { user = "mitsuka" }
+}

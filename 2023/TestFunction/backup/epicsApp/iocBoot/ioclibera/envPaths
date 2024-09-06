@@ -1,0 +1,2 @@
+epicsEnvSet("IOC","ioclibera")
+epicsEnvSet("TOP","/home/skato/work/2023/TestFunction/epicsApp")

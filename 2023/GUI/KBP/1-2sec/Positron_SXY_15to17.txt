@@ -1,0 +1,21 @@
+X
+LIiMG:SX_15_15:IWRITE, -3.686, 1.314, -1.186
+LIiMG:SX_15_25:IWRITE, -4.727, 0.273, -2.227
+LIiMG:SY_16_15:IWRITE, -1.823, 3.177, 0.677
+LIiMG:SX_16_25:IWRITE, -5.273, -0.273, -2.773
+
+Y
+LIiBM:SP_15_T_1:ISNGL:KBP, Qe
+LIiBM:SP_16_5_1:ISNGL:KBP, Q1
+LIiBM:SP_17_2_1:ISNGL:KBP, Q2
+
+YsettngText{
+}
+function{
+-(Q1+Q2)/Qe
+}
+repetition:5.0
+dataN:20
+iterN:50
+WaitTime:3.0
+acquisition_weight:1.0

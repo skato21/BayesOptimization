@@ -1,0 +1,790 @@
+#!/usr/bin/env /SAD/bin/gs-skekb
+
+FFS;
+!
+! Global symbols:
+!  ring$name : "LER" / "HER"
+!  ring$color : "red" / "blue"
+!  debug : False / True 
+!
+!
+! ring$name="LER";
+ ring$name="HER";
+
+(* Read Environments *)
+Module[{argv,narg},
+  argv=$CommandLine[];
+  narg=Length[argv];
+  debug=False;
+  Do[
+    If[argv[[i]]=="-debug",debug=True];
+    If[argv[[i]]=="-ler"||argv[[i]]=="-LER",ring$name="LER"];
+    If[argv[[i]]=="-her"||argv[[i]]=="-HER",ring$name="HER"];
+    ,{i,1,narg}];
+  ];
+
+If[ring$name=="LER",
+  Library@Require["LEROptics"];
+  ring=LEROptics[];
+  ,
+  Library@Require["HEROptics"];
+  ring=HEROptics[];
+  ];
+ring@ReadOpticsFile["operation/LastSet"];
+FFS["INS"];
+FFS["CALC"];
+FFS["SAVE ALL"];
+
+(* Definition of Functions *)
+
+InsertMark[]:=Module[{p,injoff},
+   SetElement["PINJAX0","MARK"];
+   bl=ExtractBeamLine[];
+  If[ring$name=="LER",
+    p=LINE["POSITION","QI6P"];
+!    injoff=-.23501792252995074;
+!    injoff=-.23526613294146953;
+    injoff=-.23541654973290854;
+    ,
+    p=LINE["POSITION","QI4E"];
+    injoff=-.5114721407182515;
+    ];
+  bl2=Join[Take[bl,{1,p}],BeamLine[PINJAX0],Take[bl,{p+1,-1}]];
+  FFS["USE bl2"];
+  FFS["CALC"];
+  Element["OFFSET","PINJAX0"]=injoff;
+  FFS["SAVE ALL"];
+  ];
+
+FindAx0[]:=Module[{del=0.05,elm},
+  If[ring$name=="LER",
+    elm="QI6P";
+    x1=-0.240;
+    x2=-0.235;
+    x3=-0.230;
+    ,
+    x1=-0.6;
+    x2=-0.5;
+    x3=-0.4;
+    elm="QI4E";
+    ];
+  LINE["OFFSET","PINJAX0"]=x1; FFS["CALC"]; y1=Twiss["AX","PINJAX0"];
+  LINE["OFFSET","PINJAX0"]=x2; FFS["CALC"]; y2=Twiss["AX","PINJAX0"];
+  LINE["OFFSET","PINJAX0"]=x3; FFS["CALC"]; y3=Twiss["AX","PINJAX0"];
+  Do[
+    If[y1*y2<0,
+      LINE["OFFSET","PINJAX0"]=0.5*(x1+x2);
+      FFS["CALC"];
+      x3=x2;
+      y3=y2;
+      x2=LINE["OFFSET","PINJAX0"];
+      y2=Twiss["AX","PINJAX0"];
+      ,
+      LINE["OFFSET","PINJAX0"]=0.5*(x2+x3);
+      FFS["CALC"];
+      x1=x2;
+      y1=y2;
+      x2=LINE["OFFSET","PINJAX0"];
+      y2=Twiss["AX","PINJAX0"];
+      ];
+    ,{i,1,30}];
+  Print["PINJAX0 OFFSET =",LINE["OFFSET","PINJAX0"]];
+  ];
+
+GetOptics[]:=(
+  ring@ReadOpticsFile["operation/LastSet"];
+  FFS["CALC"];
+  FFS["SAVE ALL"];
+  );
+
+CalcSeptumPosAng[]:=Module[{x0,px0},
+  x0=elib@GetPos0[];
+  px0=elib@GetAng0[];
+  mm=elib@GetSpResp[];
+  s2=Sp$S2$w-elib@GetS20[];
+  s1=Sp$S1$w-elib@GetS10[];
+  v={s2,s1};
+  mm.v+{x0,px0}
+  ];
+
+CalcInjectionOrbit[xx_:0,px_:0]:=Module[{p,xi,pxi,xinj,p1,p2,m,v},
+  p=Range[LINE["POSITION","INJECTIO"],LINE["POSITION",plot$range[[2]]]];
+  xi=xx;
+  pxi=px;
+  xinj={{LINE["S",p[[1]]],xi}};
+  Do[
+    p1=p[[i]];
+    p2=p[[i+1]];
+    m=Drop[TransferMatrix[p1,p2],-2];
+    m=Drop[#,-2]&/@m;
+    v=m.{xi,pxi};
+    xi=v[[1]];
+    If[LINE["TYPE",p1]==2,
+      pxi=v[[2]]-LINE["K0",p1];
+      ,
+      pxi=v[[2]];
+      ];
+    AppendTo[xinj,{LINE["S",p2],xi}];
+    ,{i,1,Length[p]-1}];
+  xinj
+  ];
+
+SetKicker1[]:=Module[{fac=1e-3,kk},
+  kk=elib@GetK1w[];
+  Scan[(Element["K0",K1$name[[#]]]=fac*kk*K1$ratio[[#]])&,Range[3]];
+  FFS["CALC"];
+  ];
+
+SetKicker2[]:=Module[{fac=1e-3,kk},
+  kk=elib@GetK2w[];
+  Scan[(Element["K0",K2$name[[#]]]=fac*kk*K2$ratio[[#]])&,Range[3]];
+  FFS["CALC"];
+  ];
+
+CalcKickerJump[]:=Module[{v,mm,qq},
+  If[ring$name=="LER",qq="QI7P",qq="QI5E"];
+  mm=Drop[#,-2]&/@Drop[TransferMatrix[qq,"PKICKER1"],-2];
+  v={{LINE["S","PINJAX0"],(elib@ca$kn12@Value[])*(elib@GetK1[])},
+    {LINE["S",qq],(-Inverse[mm].{0,elib@GetK1[]})[[1]]},
+    {LINE["S","PKICKER1"],0}};
+  v
+  ];
+
+PlotOrbit[]:=Module[{fac1=-1e-3,fac2=-1e3,from,to,xx,xring$mm,xinj,xinj$mm,x0,px0,xvirt,xvirt$mm,xmax,xmin},
+  from=plot$range[[1]];
+  to=plot$range[[2]];
+  xmax=If[ring$name=="HER",40,40];
+  xmin=-5.0;
+  xring$mm=Thread[{LINE["S"],fac2*Twiss["DX"]}];
+  x0=fac1*(ToExpression[Sp$Pos$r]);
+  px0=fac1*(ToExpression[Sp$Ang$r]);
+  xinj=CalcInjectionOrbit[x0,px0];
+  xinj$mm={#[[1]],fac2*#[[2]]}&/@xinj;
+  xvirt$mm=CalcKickerJump[];
+
+  If[ring$name=="LER",
+    wall={{LINE["S","QI4P"],30.0},{LINE["S","INJECTIO"],30.0}};
+    wall0={{LINE["S","QI4P"],28.2},{LINE["S","INJECTIO"],28.2}};
+    ,
+    wall={{LINE["S","QI2E"],32.5},{LINE["S","INJECTIO"],32.5}};
+    wall0={{LINE["S","QI2E"],30.5},{LINE["S","INJECTIO"],30.5}};
+    ];
+  OpticsPlot[{{xring$mm,xinj$mm,xvirt$mm,wall,wall0}},ListCoordinate->"S",PlotJoined->True,Dashing->{{1}},
+    Region->{from,to},
+    Names->"PK*|Q*|INJECTIO",
+    PlotRegion->{{-0.1,1.05},{0.1,1.1}},Legend->{"stored","injected","jump","wall","max height"},
+    PlotRange->{xmin,xmax},FrameLabel->"x(inner->) [mm]"];
+  Update[];
+  ];
+
+CalcResponseK1[]:=Module[{},
+  Scan[(LINE["K0",#]=1e-4)&,K1$name];
+  Scan[(LINE["K0",#]=1e-4)&,K2$name];
+  FFS["CALC"];
+  FFS["VARY K0 FZHINJ*"];
+  FFS["COUPLE "//K1$name[[2]]//" "//K1$name[[1]]//" 1"];
+  FFS["COUPLE "//K1$name[[3]]//" "//K1$name[[1]]//" 1"];
+  FFS["FREE "//K1$name[[1]]];
+  FFS["FIT "//plot$range[[2]]//" DX 0 DPX 0"];
+  FFS["GO",6];
+  Print[plot$range[[2]]];
+
+  r=-Twiss["DX","PINJAX0"]/(Plus@@LINE["K0",K1$name]);
+  elib@SetN12[r];
+  Scan[(LINE["K0",#]=0)&,K1$name];
+  Scan[(LINE["K0",#]=0)&,K2$name];
+  
+  ];
+
+CalcResponseK2[]:=Module[{},
+  Scan[(LINE["K0",#]=0)&,K1$name];
+  Scan[(LINE["K0",#]=1e-4)&,K2$name];
+  FFS["CALC"];
+  r=-Twiss["DX","PINJAX0"]/(3*1e-4);
+  elib@SetM12[r];
+  Scan[(LINE["K0",#]=0)&,K2$name];
+  ];
+
+CalcJumpMax[]:=Module[{mm,xvmax},
+  mm=TransferMatrix["INJECTIO","PINJAX0"];
+  mm=Drop[#,-2]&/@Drop[mm,-2];
+  xvmax=mm.{elib@GetPos0[],elib@GetAng0[]};
+  Print[xvmax];
+  ];
+
+UpdateResponse[]:=(
+  CalcResponseK2[];
+  CalcResponseK1[];
+  );
+
+(* Entry Point *)
+
+If[ring$name=="LER",
+  ring$color="red";
+  ,
+  ring$color="blue";
+];
+
+KBWindow=KBMainFrame[
+  ring$name//"_InjectionTuning",
+  fr,
+  Title->ring$name//" Injection Tuning",
+  OptionFile->Medium];
+
+KBWindow[AboutMessage]="Injection Tuning for SuperKEKB.\n Responsible person: Y. Ohnishi.\n Unauthorized attempts to modify any information stored on this system,\n to defeat or circumvent security features, or to utilize this system\n for other than its intended purposes are prohibited\n and may result in criminal prosecution.";
+
+KBWindow[HardCopyScale]=1.0;
+
+menu$com=KBFAddMenuButton[KBWindow,Text->"Command"]; 
+$menu=Menu[menu$com,Add->{
+  Button[Text->"Set ONLINE",Command:>(ca$ready@Put[1])],
+  Button[Text->"Set OFFLINE",Command:>(ca$ready@Put[0])],
+  Button[Text->"Get Optics",Command:>GetOptics[]],
+  Button[Text->"Save Params",Command:>elib@SaveConfig[]],
+  Button[Text->"Load Params",Command:>elib@LoadConfig[]],
+  If[ring$name=="LER",
+    Button[Text->"Initialize DR phase",Command:>InitializeDRphase[]]],
+  Null[]
+  }];
+
+workDir=GetEnv["PWD"];
+(* From Task Laucher, the releae version is used, otherwise a version in the local directory *)
+If[Library@Require[workDir//"/README-INJTUNING"]==0,workDir="/ldata/SuperKEKB/KCG/SAD/injection/tuning/release"];
+
+Library@Require[workDir//"/SetupEpics"];
+
+(* Insert MARK PINJAX0 if not *)
+If[LINE["NAME","PINJAX0"]=={},InsertMark[]];
+(* Check AX at PINJAX0 for kicker heigth = 0 *)
+If[Abs[Twiss["AX","PINJAX0"]]>1e-9,FindAx0[];FFS["SAVE ALL"]];
+
+(* Reverse beamline for HER *)
+If[ring$name=="HER",
+  bl$rev=-ExtractBeamLine[];
+  FFS["USE bl$rev"];
+  FFS["CALC"];
+  bg$col="LightCyan2";
+  plot$range={"QI2E","QI7E+1"};
+  elib=EpicsLib[rec$list->rec$her];
+  ,
+  bg$col="MistyRose2";
+  plot$range={"QI4P","QS1FLP+1"};
+  elib=EpicsLib[rec$list->rec$ler];
+  ];
+
+K1$name=Element["NAME","FZHINJ1*"];
+K2$name=Element["NAME","FZHINJ2*"];
+
+Sp$S1$w=elib@GetS1[];
+Sp$S2$w=elib@GetS2[];
+
+If[ring$name=="HER",
+  Sp$S3$w=elib@GetS3[];
+  Sp$S4$w=elib@GetS4[];
+  ];
+
+Sp$Pos$w=elib@GetPos[];
+Sp$Ang$w=elib@GetAng[];
+
+Ot$Pos$w=elib@GetOtPos[];
+Ot$Ang$w=elib@GetOtAng[];
+
+Ki$K1$w=elib@GetK1[];
+Ki$K2$w=elib@GetK2[];
+Ki$Kh$w=elib@GetKh[];
+Ki$Kj$w=elib@GetKj[];
+
+Vst$w=elib@GetVst[];
+Vst2$w=elib@GetVst2[];
+
+Phase$w=elib@GetPhase[];
+PhaseDR$w=elib@GetDRPhase[];
+
+K1$ratio={1,1,1}/3;
+K2$ratio={1,1,1}/3;
+
+(* Frame *)
+frame1=Frame[fr,Side->"left"];
+frame2=Frame[fr,Side->"left"];
+tabf=KBFTabFrame[frame2];
+
+tab1=tabf@AddTab["Septum & Kicker",frame3,Command:>(
+  Sp$S1$w=ToExpression[Sp$S1$r];
+  Sp$S2$w=ToExpression[Sp$S2$r];
+  Ki$K1$w=ToExpression[Ki$K1$r];
+  Ki$K2$w=ToExpression[Ki$K2$r];
+  )];
+
+tab2=tabf@AddTab["Physical Variable",frame4,Command:>(
+  Sp$Pos$w=ToExpression[Sp$Pos$r];
+  Sp$Ang$w=ToExpression[Sp$Ang$r];
+  Ki$Kh$w=ToExpression[Ki$Kh$r];
+  Ki$Kj$w=ToExpression[Ki$Kj$r];
+ 
+!  elib@SetPos[Sp$Pos$w];
+!  elib@SetAng[Sp$Ang$w];
+
+!  elib@SetKh[Ki$Kh$w];
+!  elib@SetKj[Ki$Kj$w];
+ )];
+
+If[ring$name=="HER",
+  tab3=tabf@AddTab["OTR19",frame5,Command:>(
+    )];
+  ];
+
+comp$width=18;
+SeptRep$r="N/A";
+
+comp0=KBFComponentFrame[frame1,Add->{
+   KBFFrame[Add->{
+    KBFText[Text->"Status:"],
+    KBFText[Variable:>inj$status,WidgetOption->{Font->TextFont["helvetica","bold",20],Width->10},
+      WidgetVariable:>wv$status,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Septum Rep [Hz]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>SeptRep$r,WidgetOption->{Width->8},NextColumn->True]
+    },NextColumn->True],
+ Null[]
+  }];
+
+canv=Canvas[frame1,Width->500,Height->500,BG->bg$col];
+Canvas$Widget=canv;
+
+comp1=KBFComponentFrame[frame3,Add->{
+  KBFGroup[Text->"Septum"],
+  KBFFrame[Add->{
+    KBFText[Text->"Position [mm]",WidgetOption->{Width->12}],
+    KBFText[Variable:>Sp$Pos$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFText[Text->"Angle [mrad]",WidgetOption->{Width->12},NextColumn->True],
+    KBFText[Variable:>Sp$Ang$r,WidgetOption->{Width->8},NextColumn->True]
+    }],
+
+  KBFSeparator[],
+
+  KBFFrame[Add->{
+    KBFText[Text->"Septum 2 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$S2$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"7.3",Variable:>Sp$S2$w,
+      Command:>(
+        elib@SetS2[Sp$S2$w];
+        {Sp$Pos$w,Sp$Ang$w}=CalcSeptumPosAng[];
+        After[0.1,
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvS2,EntryWidth->8,NextColumn->True]
+    }],
+
+  KBFFrame[Add->{
+    KBFText[Text->"Septum 1 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$S1$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"7.3",Variable:>Sp$S1$w,
+      Command:>(
+        elib@SetS1[Sp$S1$w];
+        {Sp$Pos$w,Sp$Ang$w}=CalcSeptumPosAng[];
+        After[0.1,
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvS1,EntryWidth->8,NextColumn->True]
+    }],
+
+  KBFButton[Text->"Set",Command:>(
+    If[ring$name=="HER",
+      CaWrite["BTePMG:SE1:VSET_STRB",1];
+      CaWrite["BTePMG:SE2:VSET_STRB",1];
+      ,
+      CaWrite["BTpPMG:SP1:VSET_STRB",1];
+      CaWrite["BTpPMG:SP2:VSET_STRB",1];
+      ];
+    
+    ),WidgetOption->{Width->12}],
+  KBFGroup[Text->"Kicker"],    
+  KBFFrame[Add->{
+    KBFText[Text->"Height [mm]",WidgetOption->{Width->12}],
+    KBFText[Variable:>Ki$Kh$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFText[Text->"Jump",WidgetOption->{Width->12},NextColumn->True],
+    KBFText[Variable:>Ki$Kj$r,WidgetOption->{Width->8},NextColumn->True]
+    }],
+  KBFSeparator[],
+  KBFFrame[Add->{
+    KBFText[Text->"Kicker 1 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ki$K1$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"6.3",Variable:>Ki$K1$w,
+      Command:>(
+        Ki$K1$w=Restrict[Ki$K1$w,0,Abs[Ki$K1$w]];
+        elib@SetK1[Ki$K1$w];
+        After[0.1,
+          SetKicker1[];
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvK1,EntryWidth->8,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Kicker 2 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ki$K2$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"6.3",Variable:>Ki$K2$w,
+      Command:>(
+        Ki$K2$w=Restrict[Ki$K2$w,0,Abs[Ki$K2$w]];
+        elib@SetK2[Ki$K2$w];
+        After[0.1,
+          SetKicker2[];
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvK2,EntryWidth->8,NextColumn->True]
+    }],
+
+  Null[]
+  }];
+
+comp2=KBFComponentFrame[frame4,Add->{
+  KBFGroup[Text->"Septum"],
+  If[ring$name=="HER",
+    KBFFrame[Add->{
+      KBFText[Text->"Septum 4 [mrad]",WidgetOption->{Width->14}],
+      KBFText[Variable:>Sp$S4$r,WidgetOption->{Width->8},NextColumn->True],
+      KBFText[Text->"Septum 3 [mrad]",WidgetOption->{Width->14},NextColumn->True],
+      KBFText[Variable:>Sp$S3$r,WidgetOption->{Width->8},NextColumn->True]
+      }]
+    ],
+  KBFFrame[Add->{
+    KBFText[Text->"Septum 2 [mrad]",WidgetOption->{Width->14}],
+    KBFText[Variable:>Sp$S2$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFText[Text->"Septum 1 [mrad]",WidgetOption->{Width->14},NextColumn->True],
+    KBFText[Variable:>Sp$S1$r,WidgetOption->{Width->8},NextColumn->True]
+    }],
+  KBFSeparator[],
+  KBFFrame[Add->{
+    KBFText[Text->"Septum Position [mm]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$Pos$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Sp$Pos$w,
+      Command:>(
+        elib@SetPos[Sp$Pos$w];
+        After[0.3,
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvSp,EntryWidth->8,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Septum Angle [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$Ang$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Sp$Ang$w,
+      Command:>(
+        elib@SetAng[Sp$Ang$w];
+        After[0.3,
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvSs,EntryWidth->8,NextColumn->True]
+    }],
+  KBFButton[Text->"Set",Command:>(
+    If[ring$name=="HER",
+      CaWrite["BTePMG:SE1:VSET_STRB",1];
+      CaWrite["BTePMG:SE2:VSET_STRB",1];
+      ,
+      CaWrite["BTpPMG:SP1:VSET_STRB",1];
+      CaWrite["BTpPMG:SP2:VSET_STRB",1];
+      ];
+
+    ),WidgetOption->{Width->12}],
+  KBFGroup[Text->"Kicker"],
+  KBFFrame[Add->{
+    KBFText[Text->"Kicker 1 [mrad]",WidgetOption->{Width->12}],
+    KBFText[Variable:>Ki$K1$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFText[Text->"Kicker 2 [mrad]",WidgetOption->{Width->12},NextColumn->True],
+    KBFText[Variable:>Ki$K2$r,WidgetOption->{Width->8},NextColumn->True]
+    }],
+  KBFSeparator[],   
+  KBFFrame[Add->{
+    KBFText[Text->"Kicker Height [mm]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ki$Kh$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Ki$Kh$w,
+      Command:>(
+        Ki$Kh$w=Restrict[Ki$Kh$w,0,38];
+        elib@SetKh[Ki$Kh$w];
+        After[0.1,
+          SetKicker1[];
+          SetKicker2[];
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvKh,EntryWidth->8,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Kicker Jump",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ki$Kj$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Ki$Kj$w,
+      Command:>(
+!        Ki$Kj$w=Min[Ki$Kj$w,1];
+        elib@SetKj[Ki$Kj$w];
+        After[0.1,
+          SetKicker1[];
+          SetKicker2[];
+          PlotOrbit[];
+          ];
+        True),
+      WidgetVariable:>wvKj,EntryWidth->8,NextColumn->True]
+    }],
+
+  Null[]
+  }];
+
+If[ring$name=="LER",
+  vst$name=("vst_r"/.rec$ler)[7,-5];
+  vst2$name=("vst2_r"/.rec$ler)[7,-5];
+  ,
+  vst$name=("vst_r"/.rec$her)[7,-5];
+  vst2$name=("vst2_r"/.rec$her)[7,-5];
+  ];
+
+! mo$fb=If[First[CaRead["LIiRF:MOFB:READY_INJ"]]==1,2,1];
+vstr$yyp=2;
+
+comp3=KBFComponentFrame[frame2,Add->{
+
+  KBFFrame[Add->{
+    KBFText[Text->vst2$name//" [mrad]",WidgetOption->{Width->comp$width},WidgetVariable:>wvVst2$name],
+    KBFText[Variable:>Vst2$r,WidgetOption->{Width->8},NextColumn->True],
+    Null[]
+    }],
+
+  KBFFrame[Add->{
+    KBFText[Text->vst$name//" [mrad]",WidgetOption->{Width->comp$width},WidgetVariable:>wvVst$name],
+    KBFText[Variable:>Vst$r,WidgetOption->{Width->8},NextColumn->True],
+    Null[]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"y-position [mm]",WidgetOption->{Width->comp$width},WidgetVariable:>wvYpos$name],
+    KBFText[Variable:>ypos$inj$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>ypos$inj$w,
+      Command:>(
+        If[vstr$yyp==2,
+          TkSense[0.1];
+          elib@SetYpos[ypos$inj$w];
+          elib@SetYang[yang$inj$w];
+          TkSense[0.1];
+          ang1=1e3*First[CaRead["CG"//ring$name[1]//"INJ:INJECTION:ANG1"]];
+          ang2=1e3*First[CaRead["CG"//ring$name[1]//"INJ:INJECTION:ANG2"]];
+          Vst2$w=ang1;
+          Vst$w=ang2;
+          TkSense[0.1];
+          elib@SetVst2[ang1];
+          elib@SetVst[ang2];
+          ];
+        True),
+      WidgetVariable:>wvYpos,EntryWidth->8,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"y-angle [mrad]",WidgetOption->{Width->comp$width},WidgetVariable:>wvYang$name],
+    KBFText[Variable:>yang$inj$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>yang$inj$w,
+      Command:>(
+        If[vstr$yyp==2,
+          TkSense[0.1];
+          elib@SetYpos[ypos$inj$w];
+          elib@SetYang[yang$inj$w];
+          TkSense[0.1];
+          ang1=1e3*First[CaRead["CG"//ring$name[1]//"INJ:INJECTION:ANG1"]];
+          ang2=1e3*First[CaRead["CG"//ring$name[1]//"INJ:INJECTION:ANG2"]];
+          Vst2$w=ang1;
+          Vst$w=ang2;
+          TkSense[0.1];
+          elib@SetVst2[ang1];
+          elib@SetVst[ang2];
+          ];
+        True),
+      WidgetVariable:>wvYang,EntryWidth->8,NextColumn->True]
+    }],
+
+  KBFSeparator[],
+  KBFFrame[Add->{
+    KBFText[Text->"MO FB"],
+    KBFText[Text->"MON_PS",NextColumn->True],
+    KBFText[Variable:>Phase$ps2$s,WidgetOption->{Width->8},NextColumn->True],
+    Null[]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Inj. Phase [deg]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Phase$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"6.1",Variable:>Phase$w,
+      Command:>(
+        If[ring$name=="LER",
+          Phase$ps2=First[CaRead["LIiRF:MOPS:MON_PS2:LER"]];
+          ,
+          Phase$ps2=First[CaRead["LIiRF:MOPS:MON_PS1"]];
+          ];
+        Phase$offset=Phase$w-Phase$ps2;
+          !];
+        Phase$w=Restrict[Phase$w,-400,400];
+        If[ring$name=="HER",
+          elib@SetPhase[Phase$w];
+          dPhase=(Phase$w-First[CaRead["LIiRF:MOPS:MON_PS1"]])-Phase$offset;
+          Print["Check Phase :",dPhase," offset =",Phase$offset," PS2 =",First[CaRead["LIiRF:MOPS:MON_PS1"]]];
+          ,
+          CaWrite["CGLINJ:INJECTION:PHASE",Phase$w];
+          After[0.1,PhaseDR$w=First[CaRead["CGDINJ:INJECTION:PHASE"]]];
+          ];
+        True),
+      WidgetVariable:>wvPhase,EntryWidth->8,NextColumn->True]
+    }],
+
+  If[ring$name=="LER",
+    KBFFrame[Add->{
+      KBFText[Text->"DR Phase [deg]",WidgetOption->{Width->comp$width}],
+      KBFText[Variable:>PhaseDR$r,WidgetOption->{Width->8},NextColumn->True],
+      KBFCursorEntry[NumberForm->"6.1",Variable:>PhaseDR$w,
+        Command:>(
+          True),
+        WidgetVariable:>wvDRPhase,EntryWidth->8,NextColumn->True]
+      }]],
+  
+  If[ring$name=="LER",
+    KBFButton[Text->"Set",Command:>(
+!      DPhase=Phase$w-PhasePrev$w;
+      elib@SetPhase[Phase$w];
+!      PhaseDR$w=PhaseDR$w+DPhase*49/55;
+      elib@SetDRPhase[PhaseDR$w];
+!      PhasePrev$w=Phase$w;
+      dPhase=(Phase$w-First[CaRead["LIiRF:MOPS:MON_PS2:"//ring$name]])-Phase$offset;
+      Print["Check Phase :",dPhase," offset =",Phase$offset," PS2 =",First[CaRead["LIiRF:MOPS:MON_PS2:"//ring$name]]];
+      ),WidgetOption->{Width->12},NextColum->True]
+    ],
+
+  Null[]
+  }];
+
+If[ring$name=="HER",
+comp4=KBFComponentFrame[frame5,Add->{
+  KBFFrame[Add->{
+    KBFText[Text->"Septum 4 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$S4$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"7.3",Variable:>Sp$S4$w,
+      Command:>(
+        elib@SetS4[Sp$S4$w];
+        After[0.1,
+          Ot$Pos$w=ToExpression[Ot$Pos$r];
+          Ot$Ang$w=ToExpression[Ot$Ang$r];
+          ];
+        True),
+      WidgetVariable:>wvS4,EntryWidth->8,NextColumn->True],
+    Null[]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"Septum 3 [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Sp$S3$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"7.3",Variable:>Sp$S3$w,
+      Command:>(
+        elib@SetS3[Sp$S3$w];
+        After[0.1,
+          Ot$Pos$w=ToExpression[Ot$Pos$r];
+          Ot$Ang$w=ToExpression[Ot$Ang$r];
+          ];
+        True),
+      WidgetVariable:>wvS3,EntryWidth->8,NextColumn->True],
+    Null[]
+    }],
+  KBFSeparator[],
+  KBFFrame[Add->{
+    KBFText[Text->"OTR19 Position [mm]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ot$Pos$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Ot$Pos$w,
+      Command:>(
+        elib@SetOtPos[Ot$Pos$w];
+        After[0.1,
+          Sp$S3$w=ToExpression[Sp$S3$r];
+          Sp$S4$w=ToExpression[Sp$S4$r];
+          ];
+        True),
+      EntryWidth->8,NextColumn->True]
+    }],
+  KBFFrame[Add->{
+    KBFText[Text->"OTR19 Angle [mrad]",WidgetOption->{Width->comp$width}],
+    KBFText[Variable:>Ot$Ang$r,WidgetOption->{Width->8},NextColumn->True],
+    KBFCursorEntry[NumberForm->"8.3",Variable:>Ot$Ang$w,
+      Command:>(
+        elib@SetOtAng[Ot$Ang$w];
+        After[0.1,
+          Sp$S3$w=ToExpression[Sp$S3$r];
+          Sp$S4$w=ToExpression[Sp$S4$r];
+          ];
+        True),
+      EntryWidth->8,NextColumn->True]
+    }],
+  KBFButton[Text->"Set",Command:>(
+    CaWrite["BTePMG:SE3:VSET_STRB",1];
+    CaWrite["BTePMG:SE4:VSET_STRB",1];
+    ),WidgetOption->{Width->12}],
+  Null[]
+  }];
+];
+
+! UpdateResponse[];
+
+(* Set K0 to FZHINJ *)
+SetKicker1[]; 
+SetKicker2[];
+
+PlotOrbit[];
+
+tabf@SelectTab[tab1];
+
+inj$status="";
+CheckOnline[]:=Module[{},
+  If[ca$ready@Value[]==0,
+    inj$status="OFFLINE";
+    wv$status[FG]="red";
+    ,
+    inj$status="ONLINE";
+    wv$status[FG]="blue";
+    ];
+  ];
+
+ca$ready=CaMonitor["CG"//ring$name[1]//"INJ:SEPTUM_KICKER:READY",ValueCommand:>CheckOnline[]];
+
+SaveCycle[]:=(
+  elib@SaveConfig[];
+  After[3600,SaveCycle[]];
+  );
+
+SaveCycle[];
+
+InjPhaseCycle[]:=(
+  If[ring$name=="LER",
+    Phase$ps2=First[CaRead["LIiRF:MOPS:MON_PS2:LER"]];
+    ,
+    Phase$ps2=First[CaRead["LIiRF:MOPS:MON_PS1"]];
+    ];
+  Phase$ps2$s=StandardForm[$FORM="6.1";ToString[Phase$ps2]];
+  After[1,InjPhaseCycle[]];
+  );
+
+InjPhaseCycle[];
+
+tabf@SelectTab[tab2];
+
+CaMonitor@WaitValue[10];
+
+Print[GetEnv["REMOTEHOST"]];
+! ca$ready@Put[1];
+
+
+If[vstr$yyp==1,
+  wvVst2$name[FG]="blue";
+  wvVst$name[FG]="blue";
+  wvYpos$name[FG]="black";
+  wvYang$name[FG]="black";
+  ,
+  wvVst2$name[FG]="black";
+  wvVst$name[FG]="black";
+  wvYpos$name[FG]="blue";
+  wvYang$name[FG]="blue";
+  ];
+
+elib@ReadSeptumRep[];
+
+TkWait[];

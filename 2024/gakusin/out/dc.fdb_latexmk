@@ -1,0 +1,27 @@
+# Fdb version 4
+["dvipdf"] 0 "out/dc.dvi" "out/dc.pdf" "out/dc" 0 -1
+  "out/dc.dvi" 0 -1 0 "latex"
+  (generated)
+  "out/dc.pdf"
+  (rewritten before read)
+["latex"] 1712917159 "/home/skato/work/2024/gakusin/dc.tex" "out/dc.dvi" "dc" 1712917159 2
+  "/etc/texmf/web2c/texmf.cnf" 1712242493 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/skato/work/2024/gakusin/dc.tex" 1712917158 8354 ec9c76bc7dbd1990acf92a001445072a ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm" 1463434352 1196 1be730212205a270378fba11a44765dc ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1463434352 856 39c171483fe1bb7d0e1368980c0c205b ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls" 1601501154 25873 fd34d08164a3ea7afd6bc7fe99629a3d ""
+  "/usr/share/texlive/texmf-dist/tex/platex/base/jsize11.clo" 1601501154 8623 02e6f686ac653e2df9e7d43b25d5e482 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
+  "/var/lib/texmf/web2c/eptex/platex.fmt" 1712243074 7913712 569b91da87000cb6e6d8eec333716af6 ""
+  "dc.tex" 1712917158 8354 ec9c76bc7dbd1990acf92a001445072a ""
+  "out/dc.aux" 1712917159 32 3985256e7290058c681f74d7a3565a19 "latex"
+  "out/pieces/form00_header.tex" 0 -1 0 ""
+  "pieces/form00_header.tex" 0 -1 0 ""
+  (generated)
+  "out/dc.aux"
+  "out/dc.dvi"
+  "out/dc.log"
+  (rewritten before read)

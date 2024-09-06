@@ -1,0 +1,24 @@
+X
+LIiMG:PX_R0_01:IWRITE:KBP, 0.167, 3.167, 1.667
+LIiMG:PY_R0_01:IWRITE:KBP, -2.654, 0.346, -1.154
+LIiMG:PX_R0_02:IWRITE:KBP, -0.092, 2.908, 1.408
+LIiMG:PY_R0_02:IWRITE:KBP, -1.297, 1.703, 0.203
+
+Y
+LIiBM:SP_R0_62_1:ISNGL:KBP, Q1
+LIiBM:SP_R0_63_1:ISNGL:KBP, Q2
+LIiBM:SP_C1_4_1:ISNGL:KBP, Q3
+LIiBM:SP_C2_4_1:ISNGL:KBP, Q4
+
+YsettngText{
+}
+function{
+-(Q1+Q2+Q3+Q4)
+}
+repetition:5.0
+dataN:20
+iterN:50
+WaitTime:1.0
+method:Baysian
+acquisition_weight:1.0
+initial_value_range:20.0

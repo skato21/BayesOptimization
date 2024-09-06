@@ -1,0 +1,19 @@
+3
+Result 0 0.09357359260320663 -1.5 3.5 -4.0 1.9647376328549384 0.09357359260320663 -1.5 3.5 -4.0 1.9647376328549384
+Result 1 0.30912572145462036 -1.5 3.4370972159320767 -3.6564306989801083 -0.22881979921096288 0.30912572145462036 -1.5 3.4370972159320767 -3.6564306989801083 -0.22881979921096288
+Result 2 0.3289221227169037 -1.5 1.8732386932592684 -3.94394727292221 0.31002271573477574 0.3289221227169037 -1.5 1.8732386932592684 -3.94394727292221 0.31002271573477574
+Result 3 0.1553867906332016 -1.5 2.8559022467241566 -2.6393820730806716 0.43927311832160804 0.3289221227169037 -1.5 1.8732386932592684 -3.94394727292221 0.31002271573477574
+Result 4 0.3390127122402191 -2.5794465429753557 2.5772999661789955 -3.6768793636404 0.33980573364025773 0.3390127122402191 -2.5794465429753557 2.5772999661789955 -3.6768793636404 0.33980573364025773
+Traceback (most recent call last):
+  File "/nfs/sadstorage-users/mitsuka/work/2023/0515/2D_EPICS_20230516.py", line 155, in <module>
+    plt.show()
+  File "/users/mitsuka/.local/lib/python3.11/site-packages/matplotlib/pyplot.py", line 446, in show
+    return _get_backend_mod().show(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/mitsuka/.local/lib/python3.11/site-packages/matplotlib/backend_bases.py", line 3620, in show
+    cls.mainloop()
+  File "/users/mitsuka/.local/lib/python3.11/site-packages/matplotlib/backends/_backend_tk.py", line 523, in start_main_loop
+    first_manager.window.mainloop()
+  File "/users/mitsuka/anaconda3/envs/ml/lib/python3.11/tkinter/__init__.py", line 1485, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt

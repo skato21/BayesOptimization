@@ -1,0 +1,469 @@
+FFS;
+
+rec$ler={
+  "pos_r"->"CGLINJ:SEPTUM:POS_R",
+  "ang_r"->"CGLINJ:SEPTUM:ANG_R",
+  "pos0"->"CGLINJ:SEPTUM:POS0",
+  "ang0"->"CGLINJ:SEPTUM:ANG0",
+  "sp1_r"->"CGLINJ:SEPTUM_1:ANGLE_R",
+  "sp2_r"->"CGLINJ:SEPTUM_2:ANGLE_R",
+  "sp1_w"->"CGLINJ:SEPTUM_1:ANGLE_W",
+  "sp2_w"->"CGLINJ:SEPTUM_2:ANGLE_W",
+  "sp10"->"CGLINJ:SEPTUM_1:ANGLE0",
+  "sp20"->"CGLINJ:SEPTUM_2:ANGLE0",
+  "spm11"->"CGLINJ:SEPTUM:M11",
+  "spm12"->"CGLINJ:SEPTUM:M12",
+  "spm21"->"CGLINJ:SEPTUM:M21",
+  "spm22"->"CGLINJ:SEPTUM:M22",
+  "spn11"->"CGLINJ:SEPTUM:N11",
+  "spn12"->"CGLINJ:SEPTUM:N12",
+  "spn21"->"CGLINJ:SEPTUM:N21",
+  "spn22"->"CGLINJ:SEPTUM:N22",
+  "pos_w"->"CGLINJ:SEPTUM:POS_W",
+  "ang_w"->"CGLINJ:SEPTUM:ANG_W",
+  "km12"->"CGLINJ:KICKER:M12",
+  "kn12"->"CGLINJ:KICKER:N12",
+  "k1_r"->"CGLINJ:KICKER_1:ANGLE_R",
+  "k2_r"->"CGLINJ:KICKER_2:ANGLE_R",
+  "k1_w"->"CGLINJ:KICKER_1:ANGLE_W",
+  "k2_w"->"CGLINJ:KICKER_2:ANGLE_W",
+  "kh_r"->"CGLINJ:KICKER:HEIGHT_R",
+  "kj_r"->"CGLINJ:KICKER:JUMP_R",
+  "kh_w"->"CGLINJ:KICKER:HEIGHT_W",
+  "kj_w"->"CGLINJ:KICKER:JUMP_W",
+  "vst_w"->"BTpPS:VM33P:KDIR",
+  "vst_r"->"BTpPS:VM33P:KRB",
+  "vst2_w"->"BTpPS:VM32P:KDIR",
+  "vst2_r"->"BTpPS:VM32P:KRB",
+!  "phase_w"->"RFLMO:PHASESHIFT_SET",
+  "phase_w"->"LIiRF:MOPS:SET_PHASE:LER",
+!  "phase_w"->"LIiRF:MOFB:INJ_PHASE:LER",
+  "phase_dr_w"->"RFDNC:DR:ROOMPHASE_SET",
+  "phase_dr_r"->"RFDNC:DR:ROOMPHASE",
+  "sept_rep"->"LIiEV:SEPTUM_REP:READ:KBP",
+  "ypos_inj"->"CGLINJ:INJECTION:YPOS",
+  "yang_inj"->"CGLINJ:INJECTION:YANG",
+  "ypos_inj_w"->"CGLINJ:INJECTION:YPOS_W",
+  "yang_inj_w"->"CGLINJ:INJECTION:YANG_W"
+};
+
+rec$her={
+  "pos_r"->"CGHINJ:SEPTUM:POS_R",
+  "ang_r"->"CGHINJ:SEPTUM:ANG_R",
+  "pos0"->"CGHINJ:SEPTUM:POS0",
+  "ang0"->"CGHINJ:SEPTUM:ANG0",
+  "sp1_r"->"CGHINJ:SEPTUM_1:ANGLE_R",
+  "sp2_r"->"CGHINJ:SEPTUM_2:ANGLE_R",
+  "sp3_r"->"CGHINJ:SEPTUM_3:ANGLE_R",
+  "sp4_r"->"CGHINJ:SEPTUM_4:ANGLE_R",
+  "sp1_w"->"CGHINJ:SEPTUM_1:ANGLE_W",
+  "sp2_w"->"CGHINJ:SEPTUM_2:ANGLE_W",
+  "sp3_w"->"CGHINJ:SEPTUM_3:ANGLE_W",
+  "sp4_w"->"CGHINJ:SEPTUM_4:ANGLE_W",
+  "sp10"->"CGHINJ:SEPTUM_1:ANGLE0",
+  "sp20"->"CGHINJ:SEPTUM_2:ANGLE0",
+  "sp30"->"CGHINJ:SEPTUM_3:ANGLE0",
+  "sp40"->"CGHINJ:SEPTUM_4:ANGLE0",
+  "spm11"->"CGHINJ:SEPTUM:M11",
+  "spm12"->"CGHINJ:SEPTUM:M12",
+  "spm21"->"CGHINJ:SEPTUM:M21",
+  "spm22"->"CGHINJ:SEPTUM:M22",
+  "spn11"->"CGHINJ:SEPTUM:N11",
+  "spn12"->"CGHINJ:SEPTUM:N12",
+  "spn21"->"CGHINJ:SEPTUM:N21",
+  "spn22"->"CGHINJ:SEPTUM:N22",
+  "pos_w"->"CGHINJ:SEPTUM:POS_W",
+  "ang_w"->"CGHINJ:SEPTUM:ANG_W",
+  "km12"->"CGHINJ:KICKER:M12",
+  "kn12"->"CGHINJ:KICKER:N12",
+  "k1_r"->"CGHINJ:KICKER_1:ANGLE_R",
+  "k2_r"->"CGHINJ:KICKER_2:ANGLE_R",
+  "k1_w"->"CGHINJ:KICKER_1:ANGLE_W",
+  "k2_w"->"CGHINJ:KICKER_2:ANGLE_W",
+  "kh_r"->"CGHINJ:KICKER:HEIGHT_R",
+  "kj_r"->"CGHINJ:KICKER:JUMP_R",
+  "kh_w"->"CGHINJ:KICKER:HEIGHT_W",
+  "kj_w"->"CGHINJ:KICKER:JUMP_W",
+  "vst_w"->"BTePS:VM28E:KDIR",
+  "vst_r"->"BTePS:VM28E:KRB",
+  "vst2_w"->"BTePS:VM27E:KDIR",
+  "vst2_r"->"BTePS:VM27E:KRB",
+!  "phase_w"->"RFHMO:PHASESHIFT_SET",
+  "phase_w"->"LIiRF:MOPS:SET_PHASE:HER",
+!  "phase_w"->"LIiRF:MOFB:INJ_PHASE:HER",
+  "sept_rep"->"LIiEV:SEPTUM_REP:READ:KBE",
+  "ypos_inj"->"CGHINJ:INJECTION:YPOS",
+  "yang_inj"->"CGHINJ:INJECTION:YANG",
+  "ypos_inj_w"->"CGHINJ:INJECTION:YPOS_W",
+  "yang_inj_w"->"CGHINJ:INJECTION:YANG_W",
+
+  "otpos_r"->"CGHINJ:OTR19:POS_R",
+  "otang_r"->"CGHINJ:OTR19:ANG_R",
+  "otpos_w"->"CGHINJ:OTR19:POS_W",
+  "otang_w"->"CGHINJ:OTR19:ANG_W"
+
+};
+(*
+Global variables:
+
+Sp$Pos$r Sp$Ang$r Sp$S1$r Sp$S2$r Sp$S3$r Sp$S4$r,
+Ki$K1$r  Ki$K2$r  Ki$Kh$r Ki$Kj$r
+Vst$r    Phase$r
+
+for HER
+Ot$Pos$r Ot$Ang$r 
+*)
+EpicsLib=Class[{},{},
+  {
+    rec$list={},
+
+    ca$posr,ca$angr,
+    ca$posw,ca$angw,
+    ca$pos0,ca$ang0,
+    ca$sp1r,ca$sp2r,ca$sp3r,ca$sp4r,
+    ca$sp1w,ca$sp2w,ca$sp3w,ca$sp4w,
+    ca$sp10,ca$sp20,ca$sp30,ca$sp40,
+    ca$spm11,ca$spm12,ca$spm21,ca$spm22,
+    ca$spn11,ca$spn12,ca$spm21,ca$spn22,
+
+    ca$khr,ca$kjr,
+    ca$khw,ca$kjw,
+    ca$k1r,ca$k2r,
+    ca$k1w,ca$k2w,
+    ca$km12,
+    ca$kn12,
+
+    ca$vstr,
+    ca$vstw,
+    ca$vst2r,
+    ca$vst2w,
+    ca$phw,
+
+    ca$dr$phw,ca$dr$phr,ca$phfb,
+    ca$ypos$inj,ca$yang$inj,
+    ca$ypos$injw,ca$yang$injw,
+
+    ca$septrep,
+
+    ca$otposr,ca$otangr,ca$otposw,ca$otangw,
+
+    file$dir="/ldata/SuperKEKB/KCG/SAD/injection/tuning/config/",
+    file$name="tmp.conf"
+    },
+
+  Constructor[]:=Module[{},
+    SetupEpics[];
+    file$name=file$dir//ring$name//".Config";
+    ];
+
+  SetupEpics[]:=(
+    ca$posr=CaMonitor["pos_r"/.rec$list,ValueCommand:>(Sp$Pos$r=GetChar[ca$posr@Value[],"F8.3"])];
+    ca$angr=CaMonitor["ang_r"/.rec$list,ValueCommand:>(Sp$Ang$r=GetChar[ca$angr@Value[],"F8.3"])];
+
+    ca$pos0=CaMonitor["pos0"/.rec$list];
+    ca$ang0=CaMonitor["ang0"/.rec$list];
+
+    ca$sp1r=CaMonitor["sp1_r"/.rec$list,ValueCommand:>(Sp$S1$r=GetChar[ca$sp1r@Value[],"F7.3"])];
+    ca$sp2r=CaMonitor["sp2_r"/.rec$list,ValueCommand:>(Sp$S2$r=GetChar[ca$sp2r@Value[],"F7.3"])];
+    ca$sp10=CaMonitor["sp10"/.rec$list];
+    ca$sp20=CaMonitor["sp20"/.rec$list];
+
+    ca$sp1w=CaMonitor["sp1_w"/.rec$list];
+    ca$sp2w=CaMonitor["sp2_w"/.rec$list];
+
+    ca$spm11=CaMonitor["spm11"/.rec$list];
+    ca$spm12=CaMonitor["spm12"/.rec$list];
+    ca$spm21=CaMonitor["spm21"/.rec$list];
+    ca$spm22=CaMonitor["spm22"/.rec$list];
+
+    ca$spn11=CaMonitor["spn11"/.rec$list];
+    ca$spn12=CaMonitor["spn12"/.rec$list];
+    ca$spn21=CaMonitor["spn21"/.rec$list];
+    ca$spn22=CaMonitor["spn22"/.rec$list];
+
+    If[("sp3_r"/.rec$list)<>"sp3_r",
+      ca$sp3r=CaMonitor["sp3_r"/.rec$list,ValueCommand:>(Sp$S3$r=GetChar[ca$sp3r@Value[],"F7.3"])];
+      ca$sp4r=CaMonitor["sp4_r"/.rec$list,ValueCommand:>(Sp$S4$r=GetChar[ca$sp4r@Value[],"F7.3"])];
+      ca$sp30=CaMonitor["sp30"/.rec$list];
+      ca$sp40=CaMonitor["sp40"/.rec$list];
+      ca$sp3w=CaMonitor["sp3_w"/.rec$list];
+      ca$sp4w=CaMonitor["sp4_w"/.rec$list];
+
+      ca$otposr=CaMonitor["otpos_r"/.rec$list,ValueCommand:>(Ot$Pos$r=GetChar[ca$otposr@Value[],"F8.3"])];
+      ca$otangr=CaMonitor["otang_r"/.rec$list,ValueCommand:>(Ot$Ang$r=GetChar[ca$otangr@Value[],"F8.3"])];
+
+      ca$otposw=CaMonitor["otpos_w"/.rec$list];
+      ca$otangw=CaMonitor["otang_w"/.rec$list];
+      ];
+
+    ca$posw=CaMonitor["pos_w"/.rec$list];
+    ca$angw=CaMonitor["ang_w"/.rec$list];
+
+    ca$km12=CaMonitor["km12"/.rec$list];
+    ca$kn12=CaMonitor["kn12"/.rec$list];
+
+    ca$k1r=CaMonitor["k1_r"/.rec$list,ValueCommand:>(Ki$K1$r=GetChar[ca$k1r@Value[]])];
+    ca$k2r=CaMonitor["k2_r"/.rec$list,ValueCommand:>(Ki$K2$r=GetChar[ca$k2r@Value[]])];
+
+    ca$khr=CaMonitor["kh_r"/.rec$list,ValueCommand:>(Ki$Kh$r=GetChar[ca$khr@Value[]])];
+    ca$kjr=CaMonitor["kj_r"/.rec$list,ValueCommand:>(Ki$Kj$r=GetChar[ca$kjr@Value[]])];
+
+    ca$khw=CaMonitor["kh_w"/.rec$list];
+    ca$kjw=CaMonitor["kj_w"/.rec$list];
+
+    ca$k1w=CaMonitor["k1_w"/.rec$list];
+    ca$k2w=CaMonitor["k2_w"/.rec$list];
+
+    ca$vstw=CaMonitor["vst_w"/.rec$list];
+    ca$vstr=CaMonitor["vst_r"/.rec$list,ValueCommand:>(Vst$r=GetChar[GetVst[]])];
+
+    ca$vst2w=CaMonitor["vst2_w"/.rec$list];
+    ca$vst2r=CaMonitor["vst2_r"/.rec$list,ValueCommand:>(Vst2$r=GetChar[GetVst2[]])];
+
+    ca$phw=CaMonitor["phase_w"/.rec$list,ValueCommand:>(Phase$r=GetChar[ca$phw@Value[],"F6.1"])];
+
+    ca$septrep=CaMonitor["sept_rep"/.rec$list,ValueCommand:>(
+      If[RealQ[ca$septrep@Value[]],
+        SeptRep$r=GetChar[ca$septrep@Value[],"F6.3"];
+!        Print["SeptRep$r =",SeptRep$r];
+        ,
+        SeptRep$r="N/A";
+        ];
+      )];
+
+    If[ring$name=="LER",
+      ca$dr$phw=CaMonitor["phase_dr_w"/.rec$list];
+      ca$dr$phr=CaMonitor["phase_dr_r"/.rec$list,ValueCommand:>(PhaseDR$r=GetChar[ca$dr$phr@Value[],"F8.2"])];
+      ];
+
+    ca$phfb=CaMonitor["LIiRF:MOFB:READY_INJ"];
+
+    ca$ypos$inj=CaMonitor["ypos_inj"/.rec$list,ValueCommand:>(ypos$inj$r=GetChar[1e3*ca$ypos$inj@Value[],"F8.3"])]; (* m -> mm *)
+    ca$yang$inj=CaMonitor["yang_inj"/.rec$list,ValueCommand:>(yang$inj$r=GetChar[1e3*ca$yang$inj@Value[],"F8.3"])]; (* rad -> mrad *)
+
+    ca$ypos$injw=CaMonitor["ypos_inj_w"/.rec$list];
+    ca$yang$injw=CaMonitor["yang_inj_w"/.rec$list];
+
+    CaMonitor@WaitValue[10];
+    
+    ypos$inj$w=1e3*ca$ypos$injw@Value[];
+    yang$inj$w=1e3*ca$yang$injw@Value[];
+
+    );
+
+  GetChar[v_,form_:"F6.3"]:=StandardForm[$FORM=form;ToString[v]];
+
+  GetS1[]:=ca$sp1r@Value[];
+  GetS2[]:=ca$sp2r@Value[];
+  GetS3[]:=ca$sp3r@Value[];
+  GetS4[]:=ca$sp4r@Value[];
+
+  GetS10[]:=ca$sp10@Value[];
+  GetS20[]:=ca$sp20@Value[];
+  GetS30[]:=ca$sp30@Value[];
+  GetS40[]:=ca$sp40@Value[];
+
+  GetS1w[]:=ca$sp1w@Value[];
+  GetS2w[]:=ca$sp2w@Value[];
+  GetS3w[]:=ca$sp3w@Value[];
+  GetS4w[]:=ca$sp4w@Value[];
+
+  GetPos[]:=ca$posr@Value[];
+  GetAng[]:=ca$angr@Value[];
+
+  GetOtPos[]:=ca$otposr@Value[];
+  GetOtAng[]:=ca$otangr@Value[];
+
+  GetPos0[]:=ca$pos0@Value[];
+  GetAng0[]:=ca$ang0@Value[];
+
+  GetK1[]:=ca$k1r@Value[];
+  GetK2[]:=ca$k2r@Value[];
+
+  GetK1w[]:=ca$k1w@Value[];
+  GetK2w[]:=ca$k2w@Value[];
+
+  GetKh[]:=ca$khr@Value[];
+  GetKj[]:=ca$kjr@Value[];
+
+  SetS1[v_]:=ca$sp1w@Put[v];
+  SetS2[v_]:=ca$sp2w@Put[v];
+  SetS3[v_]:=ca$sp3w@Put[v];
+  SetS4[v_]:=ca$sp4w@Put[v];
+
+  SetPos[v_]:=ca$posw@Put[v];
+  SetAng[v_]:=ca$angw@Put[v];
+
+  SetOtPos[v_]:=ca$otposw@Put[v];
+  SetOtAng[v_]:=ca$otangw@Put[v];
+
+  SetK1[v_]:=If[v>=0,ca$k1w@Put[v]];
+  SetK2[v_]:=If[v>=0,ca$k2w@Put[v]];
+
+  SetKh[v_]:=ca$khw@Put[v];
+  SetKj[v_]:=ca$kjw@Put[v];
+
+  SetM12[v_]:=ca$km12@Put[v];
+  SetN12[v_]:=ca$kn12@Put[v];
+
+  GetVst[]:=(1e3*ca$vstr@Value[]); (* rad -> mrad *)
+  GetVst2[]:=(1e3*ca$vst2r@Value[]); (* rad -> mrad *)
+
+  GetPhase[]:=ca$phw@Value[];
+
+  GetDRPhase[]:=ca$dr$phr@Value[];
+
+  SetVst[v_]:=Module[{vm},vm=1e-3*v;ca$vstw@Put[vm]]; (* mrad -> rad *)
+  SetVst2[v_]:=Module[{vm},vm=1e-3*v;ca$vst2w@Put[vm]]; (* mrad -> rad *)
+
+  SetPhase[v_]:=ca$phw@Put[v];
+
+  SetDRPhase[v_]:=ca$dr$phw@Put[v];
+
+  SetYpos[v_]:=ca$ypos$injw@Put[1e-3*v];
+  SetYang[v_]:=ca$yang$injw@Put[1e-3*v];
+
+  GetYpos[]:=(1e3*ca$ypos$inj@Value[]);
+  GetYang[]:=(1e3*ca$yang$inj@Value[]);
+
+  GetSpResp[]:=(
+    {{ca$spm11@Value[],ca$spm12@Value[]},{ca$spm21@Value[],ca$spm22@Value[]}}
+    );
+
+  ReadSeptumRep[]:=(
+    SeptRep$r=GetChar[ca$septrep@Value[],"F6.3"];
+    );
+
+  SaveConfig[]:=Module[{v,month,day,year,time,dir,rc},
+    v=DateString[];
+    month=v[1,2];
+    day=v[4,5];
+    year=v[7,10];
+    time=v[-8,-1];
+    file$name=year//"_"//month//"_"//day//"_"//time//"-"//(ca$septrep@Value[])//"Hz"//"-"//ring$name;
+    dir="/ldata/SuperKEKB/KCG/SAD/injection/tuning/config/"//year;
+    rc=System["ls "//dir];
+    If[rc>0,
+      System["mkdir "//dir];
+      System["chmod g+w "//dir];
+      ];
+    dir="/ldata/SuperKEKB/KCG/SAD/injection/tuning/config/"//year//"/"//month;
+    rc=System["ls "//dir];
+    If[rc>0,
+      System["mkdir "//dir];
+      System["chmod g+w "//dir];
+      ];
+
+    dir="/ldata/SuperKEKB/KCG/SAD/injection/tuning/config/"//year//"/"//month//"/"//day;
+    rc=System["ls "//dir];
+    If[rc>0,
+      System["mkdir "//dir];
+      System["chmod g+w "//dir];
+      ];
+
+    file$name=dir//"/"//file$name;
+
+    SaveConfig[file$name];
+    ];
+
+  SaveConfig[file_]:=Module[{f,config},
+    config={
+      "S1"->GetS1[],
+      "S2"->GetS2[],
+      If[ring$name=="HER","S3"->GetS3[]],
+      If[ring$name=="HER","S4"->GetS4[]],
+      "K1"->GetK1[],
+      "K2"->GetK2[],
+      "Vst"->GetVst[],
+      "Vst2"->GetVst2[],
+      "Phase"->GetPhase[],
+      "SEPTUM_REP"->(ca$septrep@Value[]),
+      If[ring$name=="LER","PhaseDR"->GetDRPhase[]]
+      };
+    f=OpenWrite[file];
+    Write[f,config];
+    Close[f];
+    System["chmod g+w "//file];
+    KBWindow[StatusLine]="Save to "//file;
+    ];
+
+  LoadLastConfig[]:=(
+    LoadConfig[file$name];
+    );
+
+  LoadConfig[]:=Module[{},
+    file=KBFOpenDialog["/ldata/SuperKEKB/KCG/SAD/injection/tuning/config/","*-"//ring$name];
+    If[file<=>Null,
+      LoadConfig[file];
+      ];
+    ];
+
+  LoadConfig[file_]:=Module[{config,s1,s2,s3,s4,k1,k2,vst,phase,sept$rep},
+    config=Get[file];
+    s1="S1"/.config;
+    s2="S2"/.config;
+    s3="S3"/.config;
+    s4="S4"/.config;
+    k1="K1"/.config;
+    k2="K2"/.config;
+    vst="Vst"/.config;
+    vst2="Vst2"/.config;
+    phase="Phase"/.config;
+    sept$rep="SEPTUM_REP"/.config;
+(*
+    Print["s1 ",s1];
+    Print["s2 ",s2];
+    Print["s3 ",s3];
+    Print["s4 ",s4];
+    Print["k1 ",k1];
+    Print["k2 ",k2];
+    Print["vst ",vst];
+    Print["phase ",phase];
+*)    
+    SetS1[s1];
+    SetS2[s2];
+    If[RealQ[s3],SetS3[s3]];
+    If[RealQ[s4],SetS4[s4]];
+    SetK1[k1];
+    SetK2[k2];
+    SetVst[vst];
+    SetVst2[vst2];
+    SetPhase[phase];
+
+    TkSense[0.1];
+    Sp$Pos$w=elib@GetPos[];
+    Sp$Ang$w=elib@GetAng[];
+    elib@SetPos[Sp$Pos$w];
+    elib@SetAng[Sp$Ang$w];
+    
+    Ki$Kh$w=elib@GetKh[];
+    elib@SetKh[Ki$Kh$w];
+!    Print["Ki$Kh$w ",Ki$Kh$w];
+
+    SetK1[k1];
+ 
+    TkSense[0.1];
+    Ki$Kj$w=elib@GetKj[];
+    elib@SetKj[Ki$Kj$w];
+!    Print["Ki$Kj$w ",Ki$Kj$w];
+
+    ! set k0 to FZHINJ 
+    SetKicker1[];
+    SetKicker2[];
+    PlotOrbit[];
+! Vsteering and injection phase
+    SetVst[vst];
+    SetPhase[phase];
+    Vst$w=vst;
+    Vst2$w=vst2;
+    Phase$w=phase;
+
+    KBWindow[StatusLine]="Load from "//file//" / Septum Rep: "//sept$rep;
+    ];
+
+  ];
+
+InitializeDRphase[]:=Module[{phaseDR0=},
+  phaseDR0=First[CaRead["CGDINJ:INJECTION:PHASE0_R"]];
+  CaWrite["CGDINJ:INJECTION:PHASE0",phaseDR0];
+  ];

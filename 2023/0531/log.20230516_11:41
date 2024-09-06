@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/nfs/sadstorage-users/mitsuka/work/2023/0515/2D_EPICS_20230516.py", line 57, in <module>
+    generator = BayesianExplorationGenerator(vocs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'BayesianExplorationGenerator' is not defined

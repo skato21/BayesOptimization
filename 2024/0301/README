@@ -1,0 +1,26 @@
+// PV一覧
+CG_BTP:BPM:CHARGE1 -- BT下流のBPMで測定した電荷量 (nC)
+BMLDCCT:CURRENT -- DCCTで測定した電流 (mA)
+BMLDCCT:RATE -- DCCTで測定した電流の1秒前の電流値との差 (mA)
+CGLINJ:EFFICIENCY -- DCCTとBT下流のBPMを使って求めた入射効率 (%)
+
+// ROOTファイル
+上記PV値をログよりダウンロードし、ROOTへ変換したのがfout.root。
+
+// 電荷-->電流の変換
+例えば1 nCの電荷がリングに入ったとすると、その電流は
+1 nC * 100 kHz = 1e-4 A = 1e-1 mA
+になる。つまり
+CG_BTP:BPM:CHARGE1〜3 nCをmAへ換算すると0.3 mA程度(3/1時点)。
+
+// 見かけの入射効率の導出(1Hz入射の場合)
+BMLDCCT:RATE / CG_BTP:BPM:CHARGE1をmAへ変換した値
+これはROOTでプロットしたマゼンタマーカーに相当し、オンラインで計算しているCGLINJ:EFFICIENCY(青)と同じ値になるはず。
+
+// ビームライフを考慮した入射効率の導出
+Decay途中のBMLDCCT:RATEは、その時点でのカレント(BMLDCCT:CURRENT)に対応するdI/dt(mA/s)*1(s)になる。ちなみにdecay途中なのでdI/dt<0。
+入射中でも有限のライフによりdI/dt(mA/s)*1(s)のカレントが毎秒落ちているので、1秒間に入射された真のカレントを求めるには
+BMLDCCT:RATE - dI/dt(mA/s)*1(s)
+で補正してやれば良い。
+Decay途中の任意のカレントでのdI/dt(mA/s)は、最適化を行っていない時間帯のデータから推測する。今回はデータ点が少ないのでフィットを用いた(かなりざっくりだが補正効果を確認するには十分)。
+真に入射されたカレントをCG_BTP:BPM:CHARGE1をmAへ変換した値で割れば、真の入射効率が求まる。これはROOTでプロットした水色に相当する。

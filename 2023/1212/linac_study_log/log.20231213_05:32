@@ -1,0 +1,1100 @@
+/nfs/sadstorage-users/skato/work/2023/1212/Linac20231212.py:107: ExperimentalWarning: HitohudebayesSampler is experimental (supported from v2.4.0). The interface can change in the future.
+  sampler=Hitohudebayes.HitohudebayesSampler(),
+[I 2023-12-13 05:32:36,074] A new study created in RDB with name: 2023_12_13_05_32_35
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+0トライアルのx0を1/1分割目
+0トライアルのx1を1/1分割目
+0トライアルのx2を1/1分割目
+0トライアルのx3を1/1分割目
+0トライアルのx4を1/1分割目
+0トライアルのx5を1/1分割目
+0トライアルでの評価値は1.8490193684895833、その時のパラメータは[-4.944764588985354, 3.1746963228504805, -1.453044053548198, 3.026779525575729, -7.839730865350124, 5.5253615189014065]。
+また、最適値は1.8490193684895833、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -4.944764588985354, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.1746963228504805, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.453044053548198, 'LIiMG:PY_R0_63:IWRITE:KBP': 3.026779525575729, 'LIiMG:PX_13_5:IWRITE:KBP': -7.839730865350124, 'LIiMG:PY_13_5:IWRITE:KBP': 5.5253615189014065}
+1トライアルのx0を1/1分割目
+1トライアルのx1を1/1分割目
+1トライアルのx2を1/1分割目
+1トライアルのx3を1/1分割目
+1トライアルのx4を1/1分割目
+1トライアルのx5を1/1分割目
+1トライアルでの評価値は1.3047362963358562、その時のパラメータは[-4.214235960596379, 7.25183541127396, -4.391233883874548, -1.9024862344624436, -8.679635297463122, 1.1022415214914343]。
+また、最適値は1.8490193684895833、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -4.944764588985354, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.1746963228504805, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.453044053548198, 'LIiMG:PY_R0_63:IWRITE:KBP': 3.026779525575729, 'LIiMG:PX_13_5:IWRITE:KBP': -7.839730865350124, 'LIiMG:PY_13_5:IWRITE:KBP': 5.5253615189014065}
+2トライアルのx0を1/1分割目
+2トライアルのx1を1/1分割目
+2トライアルのx2を1/1分割目
+2トライアルのx3を1/1分割目
+2トライアルのx4を1/1分割目
+2トライアルのx5を1/1分割目
+2トライアルでの評価値は1.4781151016553242、その時のパラメータは[-0.8600656960035611, 7.385110255437869, -3.6252348072723093, -1.1075617481590183, -6.289051162884343, 1.3060529316229061]。
+また、最適値は1.8490193684895833、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -4.944764588985354, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.1746963228504805, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.453044053548198, 'LIiMG:PY_R0_63:IWRITE:KBP': 3.026779525575729, 'LIiMG:PX_13_5:IWRITE:KBP': -7.839730865350124, 'LIiMG:PY_13_5:IWRITE:KBP': 5.5253615189014065}
+3トライアルのx0を1/1分割目
+3トライアルのx1を1/2分割目
+3トライアルのx2を1/1分割目
+3トライアルのx3を1/1分割目
+3トライアルのx4を1/1分割目
+3トライアルのx5を1/1分割目
+3トライアルのx1を2/2分割目
+3トライアルでの評価値は0.8833294392873844、その時のパラメータは[-2.2956970986021075, 2.3301336843595766, -4.735173448307879, -0.6463507407357303, -7.1107653532593, 0.14089590896915638]。
+また、最適値は1.8490193684895833、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -4.944764588985354, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.1746963228504805, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.453044053548198, 'LIiMG:PY_R0_63:IWRITE:KBP': 3.026779525575729, 'LIiMG:PX_13_5:IWRITE:KBP': -7.839730865350124, 'LIiMG:PY_13_5:IWRITE:KBP': 5.5253615189014065}
+4トライアルのx0を1/1分割目
+4トライアルのx1を1/1分割目
+4トライアルのx2を1/1分割目
+4トライアルのx3を1/1分割目
+4トライアルのx4を1/1分割目
+4トライアルのx5を1/1分割目
+4トライアルでの評価値は2.2003692587216697、その時のパラメータは[-2.4734358555218803, 3.3300279309251293, -0.38431245063619457, 0.8439078693522406, -5.513797518664799, 1.2896466227164007]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+5トライアルのx0を1/1分割目
+5トライアルのx1を1/1分割目
+5トライアルのx2を1/1分割目
+5トライアルのx3を1/1分割目
+5トライアルのx4を1/1分割目
+5トライアルのx5を1/1分割目
+5トライアルでの評価値は1.2638831312457721、その時のパラメータは[-0.47759893842327905, 7.541497965474996, -3.024849155325124, -0.2440944241850378, -8.883077446659504, 1.6403618818684467]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+6トライアルのx0を1/1分割目
+6トライアルのx1を1/1分割目
+6トライアルのx2を1/1分割目
+6トライアルのx3を1/1分割目
+6トライアルのx4を1/1分割目
+6トライアルのx5を1/1分割目
+6トライアルでの評価値は1.0165748503059149、その時のパラメータは[-4.4499400591971, 3.551863377900199, -3.5441921548993007, -0.4866270866574185, -4.947504141353292, 1.6328053543790062]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+7トライアルのx0を1/1分割目
+7トライアルのx1を1/1分割目
+7トライアルのx2を1/1分割目
+7トライアルのx3を1/1分割目
+7トライアルのx4を1/1分割目
+7トライアルのx5を1/1分割目
+7トライアルでの評価値は2.0594618121782937、その時のパラメータは[-3.0132435791682326, 4.686618858019686, -1.302192924177497, -1.5084534254911253, -4.27923749360929, 2.8497728831266036]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+8トライアルのx0を1/1分割目
+8トライアルのx1を1/1分割目
+8トライアルのx2を1/1分割目
+8トライアルのx3を1/1分割目
+8トライアルのx4を1/1分割目
+8トライアルのx5を1/1分割目
+8トライアルでの評価値は0.9173566388587157、その時のパラメータは[-4.735349032572861, 6.916484266657216, 0.9761381085666478, 2.827225184602737, -7.470589350699115, 2.647874431009967]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+9トライアルのx0を1/1分割目
+9トライアルのx1を1/1分割目
+9トライアルのx2を1/2分割目
+9トライアルのx3を1/1分割目
+9トライアルのx4を1/1分割目
+9トライアルのx5を1/1分割目
+9トライアルのx2を2/2分割目
+9トライアルでの評価値は0.04650103828559319、その時のパラメータは[-2.9535620932418123, 7.971857560377503, -4.654797708112387, 2.462509055612049, -5.075371584262746, 3.87267043886498]。
+また、最適値は2.2003692587216697、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4734358555218803, 'LIiMG:PY_R0_61:IWRITE:KBP': 3.3300279309251293, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.38431245063619457, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8439078693522406, 'LIiMG:PX_13_5:IWRITE:KBP': -5.513797518664799, 'LIiMG:PY_13_5:IWRITE:KBP': 1.2896466227164007}
+tensor([ 1.0000, 35.5335,  2.8969,  1.0000,  1.0000,  1.0000])
+10トライアルのx0を1/1分割目
+10トライアルのx1を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+10トライアルのx2を1/1分割目
+10トライアルのx3を1/1分割目
+10トライアルのx4を1/1分割目
+10トライアルのx5を1/1分割目
+10トライアルでの評価値は3.2080757220586142、その時のパラメータは[-2.2689590732168865, 5.8353830837217995, -0.7947029709014055, 1.167002591072634, -4.937027845482687, 3.1157578826183325]。
+また、最適値は3.2080757220586142、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.2689590732168865, 'LIiMG:PY_R0_61:IWRITE:KBP': 5.8353830837217995, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.7947029709014055, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.167002591072634, 'LIiMG:PX_13_5:IWRITE:KBP': -4.937027845482687, 'LIiMG:PY_13_5:IWRITE:KBP': 3.1157578826183325}
+tensor([1., 1., 1., 1., 1., 1.])
+11トライアルのx0を1/1分割目
+11トライアルのx1を1/1分割目
+11トライアルのx2を1/1分割目
+11トライアルのx3を1/1分割目
+11トライアルのx4を1/1分割目
+11トライアルのx5を1/1分割目
+11トライアルでの評価値は3.28377095858256、その時のパラメータは[-1.953582302913456, 5.472806232944979, -0.40409146028058274, 0.8896086121205999, -4.7267130305676215, 3.1086919980110252]。
+また、最適値は3.28377095858256、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.953582302913456, 'LIiMG:PY_R0_61:IWRITE:KBP': 5.472806232944979, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.40409146028058274, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.8896086121205999, 'LIiMG:PX_13_5:IWRITE:KBP': -4.7267130305676215, 'LIiMG:PY_13_5:IWRITE:KBP': 3.1086919980110252}
+tensor([1., 1., 1., 1., 1., 1.])
+12トライアルのx0を1/1分割目
+12トライアルのx1を1/1分割目
+12トライアルのx2を1/1分割目
+12トライアルのx3を1/1分割目
+12トライアルのx4を1/1分割目
+12トライアルのx5を1/1分割目
+12トライアルでの評価値は3.945589065551758、その時のパラメータは[-1.5607111602976795, 5.105294305554477, -0.8902479860763597, 0.9790903918899367, -4.852916724316243, 3.2244781268203537]。
+また、最適値は3.945589065551758、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.5607111602976795, 'LIiMG:PY_R0_61:IWRITE:KBP': 5.105294305554477, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.8902479860763597, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.9790903918899367, 'LIiMG:PX_13_5:IWRITE:KBP': -4.852916724316243, 'LIiMG:PY_13_5:IWRITE:KBP': 3.2244781268203537}
+tensor([1., 1., 1., 1., 1., 1.])
+13トライアルのx0を1/1分割目
+13トライアルのx1を1/1分割目
+13トライアルのx2を1/1分割目
+13トライアルのx3を1/1分割目
+13トライアルのx4を1/1分割目
+13トライアルのx5を1/1分割目
+13トライアルでの評価値は3.84179957707723、その時のパラメータは[-1.2826097070465767, 4.670862638378711, -1.0796826020380372, 1.201690678595249, -4.94310569362211, 3.6238231921339237]。
+また、最適値は3.945589065551758、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.5607111602976795, 'LIiMG:PY_R0_61:IWRITE:KBP': 5.105294305554477, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.8902479860763597, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.9790903918899367, 'LIiMG:PX_13_5:IWRITE:KBP': -4.852916724316243, 'LIiMG:PY_13_5:IWRITE:KBP': 3.2244781268203537}
+tensor([1., 1., 1., 1., 1., 1.])
+14トライアルのx0を1/1分割目
+14トライアルのx1を1/1分割目
+14トライアルのx2を1/1分割目
+14トライアルのx3を1/1分割目
+14トライアルのx4を1/1分割目
+14トライアルのx5を1/1分割目
+14トライアルでの評価値は3.3454390366872153、その時のパラメータは[-0.8886601739651976, 5.105525715943263, -1.1287864980159599, 0.9315687511995501, -4.8207582946076855, 3.013412797023013]。
+また、最適値は3.945589065551758、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.5607111602976795, 'LIiMG:PY_R0_61:IWRITE:KBP': 5.105294305554477, 'LIiMG:PX_R0_63:IWRITE:KBP': -0.8902479860763597, 'LIiMG:PY_R0_63:IWRITE:KBP': 0.9790903918899367, 'LIiMG:PX_13_5:IWRITE:KBP': -4.852916724316243, 'LIiMG:PY_13_5:IWRITE:KBP': 3.2244781268203537}
+tensor([1., 1., 1., 1., 1., 1.])
+15トライアルのx0を1/1分割目
+15トライアルのx1を1/1分割目
+15トライアルのx2を1/1分割目
+15トライアルのx3を1/1分割目
+15トライアルのx4を1/1分割目
+15トライアルのx5を1/1分割目
+15トライアルでの評価値は4.42922846476237、その時のパラメータは[-1.7315352463993126, 4.625247158536901, -1.1311032059253572, 1.0451371421021136, -4.469034556379834, 3.333565015901155]。
+また、最適値は4.42922846476237、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.7315352463993126, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.625247158536901, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1311032059253572, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.0451371421021136, 'LIiMG:PX_13_5:IWRITE:KBP': -4.469034556379834, 'LIiMG:PY_13_5:IWRITE:KBP': 3.333565015901155}
+tensor([1., 1., 1., 1., 1., 1.])
+16トライアルのx0を1/1分割目
+16トライアルのx1を1/1分割目
+16トライアルのx2を1/1分割目
+16トライアルのx3を1/1分割目
+16トライアルのx4を1/1分割目
+16トライアルのx5を1/1分割目
+16トライアルでの評価値は4.735232512156169、その時のパラメータは[-1.9339632248340592, 4.471128812886201, -1.1812887251168034, 1.4526794190819916, -4.058326531862104, 3.238529479443185]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+17トライアルのx0を1/1分割目
+17トライアルのx1を1/1分割目
+17トライアルのx2を1/1分割目
+17トライアルのx3を1/1分割目
+17トライアルのx4を1/1分割目
+17トライアルのx5を1/1分割目
+17トライアルでの評価値は4.423900206883748、その時のパラメータは[-1.9519789044722913, 4.627085446011989, -1.1962105767499724, 1.521001284008678, -3.468108386165593, 3.5208110987200847]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1.0000, 1.0000, 1.0000, 1.0000, 2.1363, 1.0000])
+18トライアルのx0を1/1分割目
+18トライアルのx1を1/1分割目
+18トライアルのx2を1/1分割目
+18トライアルのx3を1/1分割目
+18トライアルのx4を1/1分割目
+18トライアルのx5を1/1分割目
+18トライアルでの評価値は4.455604712168376、その時のパラメータは[-2.0935675850512596, 3.927401097556766, -1.0902148387656325, 1.6121278152473595, -3.913552023860251, 3.218289697761609]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1.0000, 1.0000, 1.0000, 1.0000, 1.0946, 1.0000])
+19トライアルのx0を1/1分割目
+19トライアルのx1を1/1分割目
+19トライアルのx2を1/1分割目
+19トライアルのx3を1/1分割目
+19トライアルのx4を1/1分割目
+19トライアルのx5を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+19トライアルでの評価値は4.4505696296691895、その時のパラメータは[-1.9768764059617423, 4.441962939387106, -1.4809768060369044, 1.779076716525883, -4.1438265388227915, 2.9658002973671476]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+20トライアルのx0を1/1分割目
+20トライアルのx1を1/1分割目
+20トライアルのx2を1/1分割目
+20トライアルのx3を1/1分割目
+20トライアルのx4を1/1分割目
+20トライアルのx5を1/1分割目
+20トライアルでの評価値は4.003025849660237、その時のパラメータは[-1.8252408119675474, 4.524085163589934, -0.970474666898113, 1.712341692716918, -4.040832874103348, 2.9911209083516193]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+21トライアルのx0を1/1分割目
+21トライアルのx1を1/1分割目
+21トライアルのx2を1/1分割目
+21トライアルのx3を1/1分割目
+21トライアルのx4を1/1分割目
+21トライアルのx5を1/1分割目
+21トライアルでの評価値は3.8494390646616616、その時のパラメータは[-2.2116176435142845, 4.204710173903406, -1.5765809461630758, 1.1731345995876858, -4.057085167473516, 3.398629250045899]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+22トライアルのx0を1/1分割目
+22トライアルのx1を1/1分割目
+22トライアルのx2を1/1分割目
+22トライアルのx3を1/1分割目
+22トライアルのx4を1/1分割目
+22トライアルのx5を1/1分割目
+22トライアルでの評価値は4.013833681742351、その時のパラメータは[-1.6933915214581892, 4.060125773668611, -1.2800064520038585, 1.3279911958410384, -3.7820826862857384, 3.2666259176914196]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1.0000, 1.0000, 1.0000, 1.0000, 1.2786, 1.0000])
+23トライアルのx0を1/1分割目
+23トライアルのx1を1/1分割目
+23トライアルのx2を1/1分割目
+23トライアルのx3を1/1分割目
+23トライアルのx4を1/1分割目
+23トライアルのx5を1/1分割目
+23トライアルでの評価値は4.494940280914307、その時のパラメータは[-2.1395848116300376, 4.448005675585231, -1.1588733988112434, 1.8169515536464318, -4.253748433694425, 3.6472306196959527]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+24トライアルのx0を1/1分割目
+24トライアルのx1を1/1分割目
+24トライアルのx2を1/1分割目
+24トライアルのx3を1/1分割目
+24トライアルのx4を1/1分割目
+24トライアルのx5を1/1分割目
+24トライアルでの評価値は4.671569347381592、その時のパラメータは[-2.2678378004611304, 4.492370522437694, -1.1342878443300242, 1.6043851225901853, -4.322106466495217, 3.4678067293712327]。
+また、最適値は4.735232512156169、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -1.9339632248340592, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.471128812886201, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.1812887251168034, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4526794190819916, 'LIiMG:PX_13_5:IWRITE:KBP': -4.058326531862104, 'LIiMG:PY_13_5:IWRITE:KBP': 3.238529479443185}
+tensor([1., 1., 1., 1., 1., 1.])
+25トライアルのx0を1/1分割目
+25トライアルのx1を1/1分割目
+25トライアルのx2を1/1分割目
+25トライアルのx3を1/1分割目
+25トライアルのx4を1/1分割目
+25トライアルのx5を1/1分割目
+25トライアルでの評価値は4.80280081431071、その時のパラメータは[-2.4366255644874495, 4.50499874542909, -1.176798295886833, 1.4429875484310948, -4.229911175342847, 3.1783532524069478]。
+また、最適値は4.80280081431071、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.4366255644874495, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.50499874542909, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.176798295886833, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4429875484310948, 'LIiMG:PX_13_5:IWRITE:KBP': -4.229911175342847, 'LIiMG:PY_13_5:IWRITE:KBP': 3.1783532524069478}
+tensor([1., 1., 1., 1., 1., 1.])
+26トライアルのx0を1/1分割目
+26トライアルのx1を1/1分割目
+26トライアルのx2を1/1分割目
+26トライアルのx3を1/1分割目
+26トライアルのx4を1/1分割目
+26トライアルのx5を1/1分割目
+26トライアルでの評価値は4.965161641438802、その時のパラメータは[-2.286253121243181, 4.492894298322705, -1.2647733908144474, 1.4558104765293192, -4.424682705756275, 2.9376441688671737]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+27トライアルのx0を1/1分割目
+27トライアルのx1を1/1分割目
+27トライアルのx2を1/1分割目
+27トライアルのx3を1/1分割目
+27トライアルのx4を1/1分割目
+27トライアルのx5を1/1分割目
+27トライアルでの評価値は4.92850128809611、その時のパラメータは[-2.2179671187331134, 4.611723158828944, -1.2679679730602862, 1.422807046580663, -4.1772975706908095, 2.6406388488501316]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+28トライアルのx0を1/1分割目
+28トライアルのx1を1/1分割目
+28トライアルのx2を1/1分割目
+28トライアルのx3を1/1分割目
+28トライアルのx4を1/1分割目
+28トライアルのx5を1/1分割目
+28トライアルでの評価値は4.770790259043376、その時のパラメータは[-2.282346377344774, 4.28306035281558, -1.2466545194510292, 1.5140395068050285, -4.394225029701528, 2.587771244883646]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+29トライアルのx0を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+29トライアルのx1を1/1分割目
+29トライアルのx2を1/1分割目
+29トライアルのx3を1/1分割目
+29トライアルのx4を1/1分割目
+29トライアルのx5を1/1分割目
+29トライアルでの評価値は4.6095015207926435、その時のパラメータは[-2.1629070121220026, 4.849110626223674, -1.3085355150528968, 1.4448298012295488, -4.538368052654025, 2.9103964214247493]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+30トライアルのx0を1/1分割目
+30トライアルのx1を1/1分割目
+30トライアルのx2を1/1分割目
+30トライアルのx3を1/1分割目
+30トライアルのx4を1/1分割目
+30トライアルのx5を1/1分割目
+30トライアルでの評価値は4.660091559092204、その時のパラメータは[-2.321033191766319, 4.511715238164608, -1.213899804778002, 1.2302702430389987, -4.115979120009785, 2.787027956976298]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+31トライアルのx0を1/1分割目
+31トライアルのx1を1/1分割目
+31トライアルのx2を1/1分割目
+31トライアルのx3を1/1分割目
+31トライアルのx4を1/1分割目
+31トライアルのx5を1/1分割目
+31トライアルでの評価値は4.680310885111491、その時のパラメータは[-2.4785632066050667, 4.473609453514841, -1.2931422171685005, 1.657786183517568, -4.021946613935247, 2.7593511092808853]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+32トライアルのx0を1/1分割目
+32トライアルのx1を1/1分割目
+32トライアルのx2を1/1分割目
+32トライアルのx3を1/1分割目
+32トライアルのx4を1/1分割目
+32トライアルのx5を1/1分割目
+32トライアルでの評価値は4.835926055908203、その時のパラメータは[-2.2409702534572244, 4.41301222085259, -1.2482024299872303, 1.4887010716971343, -4.458675870116852, 2.954759499175039]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+33トライアルのx0を1/1分割目
+33トライアルのx1を1/1分割目
+33トライアルのx2を1/1分割目
+33トライアルのx3を1/1分割目
+33トライアルのx4を1/1分割目
+33トライアルのx5を1/1分割目
+33トライアルでの評価値は4.803600311279297、その時のパラメータは[-2.217217182308879, 4.436298838882745, -1.245097293750193, 1.4633387085216425, -4.443768891425484, 3.011534178987021]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+34トライアルのx0を1/1分割目
+34トライアルのx1を1/1分割目
+34トライアルのx2を1/1分割目
+34トライアルのx3を1/1分割目
+34トライアルのx4を1/1分割目
+34トライアルのx5を1/1分割目
+34トライアルでの評価値は4.828255335489909、その時のパラメータは[-2.2134419770452434, 4.480556103395325, -1.249854098352154, 1.484780274954197, -4.234542335319594, 2.968822246500672]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+35トライアルのx0を1/1分割目
+35トライアルのx1を1/1分割目
+35トライアルのx2を1/1分割目
+35トライアルのx3を1/1分割目
+35トライアルのx4を1/1分割目
+35トライアルのx5を1/1分割目
+35トライアルでの評価値は4.569024721781413、その時のパラメータは[-2.212777053143814, 4.496884038940332, -1.2392502504252736, 1.481893047096352, -4.215287400228662, 2.8820112102083137]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+36トライアルのx0を1/1分割目
+36トライアルのx1を1/1分割目
+36トライアルのx2を1/1分割目
+36トライアルのx3を1/1分割目
+36トライアルのx4を1/1分割目
+36トライアルのx5を1/1分割目
+36トライアルでの評価値は4.960237979888916、その時のパラメータは[-2.456223082285584, 4.403652039089424, -1.2315195835948751, 1.4512605992810297, -4.756824978593508, 2.9175033819902576]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+37トライアルのx0を1/1分割目
+37トライアルのx1を1/1分割目
+37トライアルのx2を1/1分割目
+37トライアルのx3を1/1分割目
+37トライアルのx4を1/1分割目
+37トライアルのx5を1/1分割目
+37トライアルでの評価値は4.581710974375407、その時のパラメータは[-2.571205898367047, 4.375849696875667, -1.23225079229778, 1.4552709305471137, -5.121957067647001, 2.9059711436126685]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+38トライアルのx0を1/1分割目
+38トライアルのx1を1/1分割目
+38トライアルのx2を1/1分割目
+38トライアルのx3を1/1分割目
+38トライアルのx4を1/1分割目
+38トライアルのx5を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+38トライアルでの評価値は4.3698445955912275、その時のパラメータは[-2.394324336082355, 4.424262377744723, -1.181987778252279, 1.3269763400240535, -4.670916562235401, 3.0173829947255535]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+39トライアルのx0を1/1分割目
+39トライアルのx1を1/1分割目
+39トライアルのx2を1/1分割目
+39トライアルのx3を1/1分割目
+39トライアルのx4を1/1分割目
+39トライアルのx5を1/1分割目
+39トライアルでの評価値は4.032263358434041、その時のパラメータは[-2.4385442566550473, 4.475977996604643, -1.2994836724643282, 1.7398145959515312, -4.573621549614912, 2.8074467143827815]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+40トライアルのx0を1/1分割目
+40トライアルのx1を1/1分割目
+40トライアルのx2を1/1分割目
+40トライアルのx3を1/1分割目
+40トライアルのx4を1/1分割目
+40トライアルのx5を1/1分割目
+40トライアルでの評価値は4.6660871505737305、その時のパラメータは[-2.494557227700264, 4.540466188639395, -1.1574098335504455, 1.4019582717661203, -4.152896719170843, 2.9864509963710377]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+41トライアルのx0を1/1分割目
+41トライアルのx1を1/1分割目
+41トライアルのx2を1/1分割目
+41トライアルのx3を1/1分割目
+41トライアルのx4を1/1分割目
+41トライアルのx5を1/1分割目
+41トライアルでの評価値は4.802063941955566、その時のパラメータは[-2.370054614371943, 4.558359725968317, -1.2446869774050255, 1.4272505522675343, -4.174632847905846, 3.177675603070437]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+42トライアルのx0を1/1分割目
+42トライアルのx1を1/1分割目
+42トライアルのx2を1/1分割目
+42トライアルのx3を1/1分割目
+42トライアルのx4を1/1分割目
+42トライアルのx5を1/1分割目
+42トライアルでの評価値は4.689322153727214、その時のパラメータは[-2.3230748873289055, 4.53462323489525, -1.270004756216574, 1.4496973145818357, -4.261244995610695, 3.289275585106956]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+43トライアルのx0を1/1分割目
+43トライアルのx1を1/1分割目
+43トライアルのx2を1/1分割目
+43トライアルのx3を1/1分割目
+43トライアルのx4を1/1分割目
+43トライアルのx5を1/1分割目
+43トライアルでの評価値は4.858099460601807、その時のパラメータは[-2.236141576239778, 4.507437184164953, -1.2278410182968895, 1.4343795633927177, -4.353768308496034, 3.197334494241297]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+44トライアルのx0を1/1分割目
+44トライアルのx1を1/1分割目
+44トライアルのx2を1/1分割目
+44トライアルのx3を1/1分割目
+44トライアルのx4を1/1分割目
+44トライアルのx5を1/1分割目
+44トライアルでの評価値は4.59407107035319、その時のパラメータは[-2.1663210271172715, 4.528146414621789, -1.2155930542986226, 1.4041577417541626, -4.397029330720021, 2.925323425166402]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+45トライアルのx0を1/1分割目
+45トライアルのx1を1/1分割目
+45トライアルのx2を1/1分割目
+45トライアルのx3を1/1分割目
+45トライアルのx4を1/1分割目
+45トライアルのx5を1/1分割目
+45トライアルでの評価値は4.024264017740886、その時のパラメータは[-2.3070721337792808, 4.538693918497383, -1.2723416869204391, 1.4147136797189486, -4.168630963235167, 2.7752564716424066]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+46トライアルのx0を1/1分割目
+46トライアルのx1を1/1分割目
+46トライアルのx2を1/1分割目
+46トライアルのx3を1/1分割目
+46トライアルのx4を1/1分割目
+46トライアルのx5を1/1分割目
+46トライアルでの評価値は4.445077260335286、その時のパラメータは[-2.4583538172731876, 4.440134104459713, -1.1109756669212159, 1.3102802114179974, -4.2897443423319, 3.2719787514707948]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+47トライアルのx0を1/1分割目
+47トライアルのx1を1/1分割目
+47トライアルのx2を1/1分割目
+47トライアルのx3を1/1分割目
+47トライアルのx4を1/1分割目
+47トライアルのx5を1/1分割目
+47トライアルでの評価値は4.818104902903239、その時のパラメータは[-2.2725505455379187, 4.483518945977477, -1.2149980917354846, 1.426311077570308, -4.567378133001785, 3.356759568751101]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+48トライアルのx0を1/1分割目
+48トライアルのx1を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+48トライアルのx2を1/1分割目
+48トライアルのx3を1/1分割目
+48トライアルのx4を1/1分割目
+48トライアルのx5を1/1分割目
+48トライアルでの評価値は3.9159913857777915、その時のパラメータは[-2.2242036096543427, 4.475044983600419, -1.227114074065753, 1.448139408536668, -4.700749913414487, 3.3780141573839986]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+49トライアルのx0を1/1分割目
+49トライアルのx1を1/1分割目
+49トライアルのx2を1/1分割目
+49トライアルのx3を1/1分割目
+49トライアルのx4を1/1分割目
+49トライアルのx5を1/1分割目
+49トライアルでの評価値は4.248343388239543、その時のパラメータは[-2.553935554360356, 4.520853223779356, -1.1397356151755007, 1.430986538497022, -4.172672735918276, 3.1048131751347223]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+50トライアルのx0を1/1分割目
+50トライアルのx1を1/1分割目
+50トライアルのx2を1/1分割目
+50トライアルのx3を1/1分割目
+50トライアルのx4を1/1分割目
+50トライアルのx5を1/1分割目
+50トライアルでの評価値は4.69244909286499、その時のパラメータは[-2.2222241618167096, 4.494388272630639, -1.1794665225596157, 1.3294179719159551, -4.224103896737862, 2.8256599758204386]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+51トライアルのx0を1/1分割目
+51トライアルのx1を1/1分割目
+51トライアルのx2を1/1分割目
+51トライアルのx3を1/1分割目
+51トライアルのx4を1/1分割目
+51トライアルのx5を1/1分割目
+51トライアルでの評価値は4.789448420206706、その時のパラメータは[-2.1579652136385192, 4.472498235765579, -1.1971110143325934, 1.3381318134119145, -4.33237171847185, 2.7232728725207695]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+52トライアルのx0を1/1分割目
+52トライアルのx1を1/1分割目
+52トライアルのx2を1/1分割目
+52トライアルのx3を1/1分割目
+52トライアルのx4を1/1分割目
+52トライアルのx5を1/1分割目
+52トライアルでの評価値は4.527766863505046、その時のパラメータは[-2.1357446350938574, 4.455819962472649, -1.2037786129197823, 1.3376882244404538, -4.413114147247835, 2.6557004706594416]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+53トライアルのx0を1/1分割目
+53トライアルのx1を1/1分割目
+53トライアルのx2を1/1分割目
+53トライアルのx3を1/1分割目
+53トライアルのx4を1/1分割目
+53トライアルのx5を1/1分割目
+53トライアルでの評価値は4.4518812497456866、その時のパラメータは[-2.143263640438073, 4.456561111141022, -1.2041609537481657, 1.4055323745874255, -4.428613129668561, 2.7315136855523323]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+54トライアルのx0を1/1分割目
+54トライアルのx1を1/1分割目
+54トライアルのx2を1/1分割目
+54トライアルのx3を1/1分割目
+54トライアルのx4を1/1分割目
+54トライアルのx5を1/1分割目
+54トライアルでの評価値は4.476643244425456、その時のパラメータは[-2.2096076189305975, 4.667605659230867, -1.2417701358819402, 1.4186542059063578, -4.1965158377095655, 2.900551524417253]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+55トライアルのx0を1/1分割目
+55トライアルのx1を1/1分割目
+55トライアルのx2を1/1分割目
+55トライアルのx3を1/1分割目
+55トライアルのx4を1/1分割目
+55トライアルのx5を1/1分割目
+55トライアルでの評価値は3.996387004852295、その時のパラメータは[-2.261278823341492, 4.605916892932974, -1.223520496834356, 1.4394204282209495, -4.063266526122394, 2.9760288301897373]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+56トライアルのx0を1/1分割目
+56トライアルのx1を1/1分割目
+56トライアルのx2を1/1分割目
+56トライアルのx3を1/1分割目
+56トライアルのx4を1/1分割目
+56トライアルのx5を1/1分割目
+56トライアルでの評価値は4.265708605448405、その時のパラメータは[-2.3001023444696016, 4.2397122312242415, -1.1970371615994715, 1.538336187316676, -4.379236775963285, 2.9528321993671147]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+57トライアルのx0を1/1分割目
+57トライアルのx1を1/1分割目
+57トライアルのx2を1/1分割目
+57トライアルのx3を1/1分割目
+57トライアルのx4を1/1分割目
+57トライアルのx5を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+57トライアルでの評価値は4.734026749928792、その時のパラメータは[-2.183342152360304, 4.4313107911452345, -1.2149463623366907, 1.5536759115422138, -4.584152547247501, 2.933398102581652]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+58トライアルのx0を1/1分割目
+58トライアルのx1を1/1分割目
+58トライアルのx2を1/1分割目
+58トライアルのx3を1/1分割目
+58トライアルのx4を1/1分割目
+58トライアルのx5を1/1分割目
+58トライアルでの評価値は4.872737725575765、その時のパラメータは[-2.1527721938713764, 4.487379818690494, -1.2311437718663445, 1.5445593673889846, -4.6836967905840785, 2.9065324069439464]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+59トライアルのx0を1/1分割目
+59トライアルのx1を1/1分割目
+59トライアルのx2を1/1分割目
+59トライアルのx3を1/1分割目
+59トライアルのx4を1/1分割目
+59トライアルのx5を1/1分割目
+59トライアルでの評価値は4.123095273971558、その時のパラメータは[-2.1251017200682627, 4.4984236815862975, -1.2392981904925353, 1.5613088071906391, -4.791437480632202, 2.8698955905210566]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+60トライアルのx0を1/1分割目
+60トライアルのx1を1/1分割目
+60トライアルのx2を1/1分割目
+60トライアルのx3を1/1分割目
+60トライアルのx4を1/1分割目
+60トライアルのx5を1/1分割目
+60トライアルでの評価値は4.5243879954020185、その時のパラメータは[-2.29328612725507, 4.466356698630054, -1.2150535284152295, 1.2541673817053334, -4.578258453195661, 2.9284721142264334]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+61トライアルのx0を1/1分割目
+61トライアルのx1を1/1分割目
+61トライアルのx2を1/1分割目
+61トライアルのx3を1/1分割目
+61トライアルのx4を1/1分割目
+61トライアルのx5を1/1分割目
+61トライアルでの評価値は4.594142595926921、その時のパラメータは[-2.332266075742219, 4.439141588093444, -1.1752639605488029, 1.2489151390914381, -4.44288193576144, 2.9983755624310398]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+62トライアルのx0を1/1分割目
+62トライアルのx1を1/1分割目
+62トライアルのx2を1/1分割目
+62トライアルのx3を1/1分割目
+62トライアルのx4を1/1分割目
+62トライアルのx5を1/1分割目
+62トライアルでの評価値は4.258607625961304、その時のパラメータは[-2.3369250727584965, 4.416190804432759, -1.1578630591946508, 1.292797810509942, -4.3700291300553324, 3.0524048386836142]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+63トライアルのx0を1/1分割目
+63トライアルのx1を1/1分割目
+63トライアルのx2を1/1分割目
+63トライアルのx3を1/1分割目
+63トライアルのx4を1/1分割目
+63トライアルのx5を1/1分割目
+63トライアルでの評価値は4.415839036305745、その時のパラメータは[-2.3418316055346, 4.628829643916113, -1.2855174294431473, 1.5524730851122919, -4.34617218000159, 3.117083409735556]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+64トライアルのx0を1/1分割目
+64トライアルのx1を1/1分割目
+64トライアルのx2を1/1分割目
+64トライアルのx3を1/1分割目
+64トライアルのx4を1/1分割目
+64トライアルのx5を1/1分割目
+64トライアルでの評価値は4.678843816121419、その時のパラメータは[-2.3140865691110544, 4.509358561510265, -1.2132068264404934, 1.668169705534118, -4.299878975048005, 3.037485766349738]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+65トライアルのx0を1/1分割目
+65トライアルのx1を1/1分割目
+65トライアルのx2を1/1分割目
+65トライアルのx3を1/1分割目
+65トライアルのx4を1/1分割目
+65トライアルのx5を1/1分割目
+65トライアルでの評価値は4.703627586364746、その時のパラメータは[-2.3285584996518214, 4.434568890471754, -1.2095503993054635, 1.703812906448206, -4.266389677266178, 2.9782869906994445]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+66トライアルのx0を1/1分割目
+66トライアルのx1を1/1分割目
+66トライアルのx2を1/1分割目
+66トライアルのx3を1/1分割目
+66トライアルのx4を1/1分割目
+66トライアルのx5を1/1分割目
+66トライアルでの評価値は4.804943084716797、その時のパラメータは[-2.349474181960565, 4.3979150839952545, -1.2139562106904593, 1.7316230399761299, -4.241769130482031, 2.9434268559687373]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+67トライアルのx0を1/1分割目
+67トライアルのx1を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+67トライアルのx2を1/1分割目
+67トライアルのx3を1/1分割目
+67トライアルのx4を1/1分割目
+67トライアルのx5を1/1分割目
+67トライアルでの評価値は4.549997806549072、その時のパラメータは[-2.3872290639693308, 4.370454769700273, -1.2169045913523302, 1.799531728678669, -4.21471845972365, 2.9185293339230367]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+68トライアルのx0を1/1分割目
+68トライアルのx1を1/1分割目
+68トライアルのx2を1/1分割目
+68トライアルのx3を1/1分割目
+68トライアルのx4を1/1分割目
+68トライアルのx5を1/1分割目
+68トライアルでの評価値は4.82144292195638、その時のパラメータは[-2.364956716216382, 4.378318999090682, -1.2192463647224714, 1.7678160985728701, -4.21644937137027, 2.9144968910249873]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+69トライアルのx0を1/1分割目
+69トライアルのx1を1/1分割目
+69トライアルのx2を1/1分割目
+69トライアルのx3を1/1分割目
+69トライアルのx4を1/1分割目
+69トライアルのx5を1/1分割目
+69トライアルでの評価値は3.576432943344116、その時のパラメータは[-2.387815871059805, 4.362994159500847, -1.2218382450422496, 1.8300141523453233, -4.201301592122503, 2.898694602267289]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+70トライアルのx0を1/1分割目
+70トライアルのx1を1/1分割目
+70トライアルのx2を1/1分割目
+70トライアルのx3を1/1分割目
+70トライアルのx4を1/1分割目
+70トライアルのx5を1/1分割目
+70トライアルでの評価値は4.792529265085856、その時のパラメータは[-2.237187176818538, 4.6277122766066645, -1.293830458105286, 1.4752522996944362, -4.325265642879758, 3.0292550055350342]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+71トライアルのx0を1/1分割目
+71トライアルのx1を1/1分割目
+71トライアルのx2を1/1分割目
+71トライアルのx3を1/1分割目
+71トライアルのx4を1/1分割目
+71トライアルのx5を1/1分割目
+71トライアルでの評価値は4.781280517578125、その時のパラメータは[-2.2275277695589404, 4.6807965309634305, -1.3075887389762775, 1.43690741203583, -4.372629216074598, 3.075644062475284]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+72トライアルのx0を1/1分割目
+72トライアルのx1を1/1分割目
+72トライアルのx2を1/1分割目
+72トライアルのx3を1/1分割目
+72トライアルのx4を1/1分割目
+72トライアルのx5を1/1分割目
+72トライアルでの評価値は4.771894454956055、その時のパラメータは[-2.2329683649365863, 4.7052187716803715, -1.322491153514517, 1.4350547545182106, -4.393133752520505, 3.09902560722433]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+73トライアルのx0を1/1分割目
+73トライアルのx1を1/1分割目
+73トライアルのx2を1/1分割目
+73トライアルのx3を1/1分割目
+73トライアルのx4を1/1分割目
+73トライアルのx5を1/1分割目
+73トライアルでの評価値は4.478665192921956、その時のパラメータは[-2.2400416636861156, 4.7243839752134225, -1.3374387069102358, 1.4370523430565827, -4.404455733091642, 3.1132771355884894]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+74トライアルのx0を1/1分割目
+74トライアルのx1を1/1分割目
+74トライアルのx2を1/1分割目
+74トライアルのx3を1/1分割目
+74トライアルのx4を1/1分割目
+74トライアルのx5を1/1分割目
+74トライアルでの評価値は4.308326482772827、その時のパラメータは[-2.2105955615052806, 4.687198525045702, -1.3003707744938469, 1.4447695368177733, -4.39312514899594, 3.124167545561077]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+75トライアルのx0を1/1分割目
+75トライアルのx1を1/1分割目
+75トライアルのx2を1/1分割目
+75トライアルのx3を1/1分割目
+75トライアルのx4を1/1分割目
+75トライアルのx5を1/1分割目
+75トライアルでの評価値は4.8382242520650225、その時のパラメータは[-2.179412767557863, 4.613957308782252, -1.1832628370766258, 1.4469059571005278, -4.368281004772097, 3.079273968701772]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+76トライアルのx0を1/1分割目
+76トライアルのx1を1/1分割目
+76トライアルのx2を1/1分割目
+76トライアルのx3を1/1分割目
+76トライアルのx4を1/1分割目
+76トライアルのx5を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+76トライアルでの評価値は4.819547335306804、その時のパラメータは[-2.167544309373744, 4.604470806292225, -1.1540852966411328, 1.4478515437285506, -4.36411446889656, 3.0503719937728473]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+77トライアルのx0を1/1分割目
+77トライアルのx1を1/1分割目
+77トライアルのx2を1/1分割目
+77トライアルのx3を1/1分割目
+77トライアルのx4を1/1分割目
+77トライアルのx5を1/1分割目
+77トライアルでの評価値は4.328650712966919、その時のパラメータは[-2.1646476860862216, 4.6052242592973895, -1.1344427014630822, 1.4499474742373, -4.368228256182587, 3.0333416767065042]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+78トライアルのx0を1/1分割目
+78トライアルのx1を1/1分割目
+78トライアルのx2を1/1分割目
+78トライアルのx3を1/1分割目
+78トライアルのx4を1/1分割目
+78トライアルのx5を1/1分割目
+78トライアルでの評価値は4.717482566833496、その時のパラメータは[-2.107235377647087, 4.545236932930761, -1.2594897710959048, 1.4460140975193516, -4.394491977881651, 2.999385081311366]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+79トライアルのx0を1/1分割目
+79トライアルのx1を1/1分割目
+79トライアルのx2を1/1分割目
+79トライアルのx3を1/1分割目
+79トライアルのx4を1/1分割目
+79トライアルのx5を1/1分割目
+79トライアルでの評価値は4.145809968312581、その時のパラメータは[-2.0966180132329213, 4.516295752565274, -1.2813488713249939, 1.443373916615962, -4.421418408932914, 2.9574422964843867]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+80トライアルのx0を1/1分割目
+80トライアルのx1を1/1分割目
+80トライアルのx2を1/1分割目
+80トライアルのx3を1/1分割目
+80トライアルのx4を1/1分割目
+80トライアルのx5を1/1分割目
+80トライアルでの評価値は4.799289385477702、その時のパラメータは[-2.2868110866421563, 4.6125798513450755, -1.150080418945433, 1.4102139068711894, -4.3218494322920264, 3.0571849893481753]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+81トライアルのx0を1/1分割目
+81トライアルのx1を1/1分割目
+81トライアルのx2を1/1分割目
+81トライアルのx3を1/1分割目
+81トライアルのx4を1/1分割目
+81トライアルのx5を1/1分割目
+81トライアルでの評価値は4.442513624827067、その時のパラメータは[-2.3589189951634113, 4.636145226944472, -1.1464456583074591, 1.400207810636057, -4.26591532440032, 3.144072698303834]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+82トライアルのx0を1/1分割目
+82トライアルのx1を1/1分割目
+82トライアルのx2を1/1分割目
+82トライアルのx3を1/1分割目
+82トライアルのx4を1/1分割目
+82トライアルのx5を1/1分割目
+82トライアルでの評価値は4.553554217020671、その時のパラメータは[-2.346710323708227, 4.61054188028964, -1.188203613050204, 1.4084242479696738, -4.253763715069023, 3.2211329699957605]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+83トライアルのx0を1/1分割目
+83トライアルのx1を1/1分割目
+83トライアルのx2を1/1分割目
+83トライアルのx3を1/1分割目
+83トライアルのx4を1/1分割目
+83トライアルのx5を1/1分割目
+83トライアルでの評価値は4.584152062733968、その時のパラメータは[-2.316443231156443, 4.570929086518634, -1.1967896425012814, 1.4241403304733096, -4.27454835871729, 3.2684986746483733]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+84トライアルのx0を1/1分割目
+84トライアルのx1を1/1分割目
+84トライアルのx2を1/1分割目
+84トライアルのx3を1/1分割目
+84トライアルのx4を1/1分割目
+84トライアルのx5を1/1分割目
+84トライアルでの評価値は4.822454770406087、その時のパラメータは[-2.285420024569359, 4.5309437840250455, -1.1944471133176657, 1.43637327975408, -4.311460346992516, 3.2816448926247492]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+85トライアルのx0を1/1分割目
+85トライアルのx1を1/1分割目
+85トライアルのx2を1/1分割目
+85トライアルのx3を1/1分割目
+85トライアルのx4を1/1分割目
+85トライアルのx5を1/1分割目
+85トライアルでの評価値は4.70064655939738、その時のパラメータは[-2.2847932604727275, 4.509793755269205, -1.1961493629277404, 1.444995894063768, -4.3386141527299475, 3.334013991274964]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+86トライアルのx0を1/1分割目
+86トライアルのx1を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+86トライアルのx2を1/1分割目
+86トライアルのx3を1/1分割目
+86トライアルのx4を1/1分割目
+86トライアルのx5を1/1分割目
+86トライアルでの評価値は4.460684696833293、その時のパラメータは[-2.287479540396173, 4.500934372903476, -1.2009588743760764, 1.4520838658601676, -4.3527222271678845, 3.3681836010054287]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+87トライアルのx0を1/1分割目
+87トライアルのx1を1/1分割目
+87トライアルのx2を1/1分割目
+87トライアルのx3を1/1分割目
+87トライアルのx4を1/1分割目
+87トライアルのx5を1/1分割目
+87トライアルでの評価値は4.4377241134643555、その時のパラメータは[-2.2626921953196355, 4.500242861051308, -1.1906627313743208, 1.4485457927024012, -4.356781138674652, 3.307051400598758]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+88トライアルのx0を1/1分割目
+88トライアルのx1を1/1分割目
+88トライアルのx2を1/1分割目
+88トライアルのx3を1/1分割目
+88トライアルのx4を1/1分割目
+88トライアルのx5を1/1分割目
+88トライアルでの評価値は4.744217872619629、その時のパラメータは[-2.229236892805182, 4.546154557158029, -1.1390988382702885, 1.4360349700594668, -4.336691644207281, 3.111942480980167]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+89トライアルのx0を1/1分割目
+89トライアルのx1を1/1分割目
+89トライアルのx2を1/1分割目
+89トライアルのx3を1/1分割目
+89トライアルのx4を1/1分割目
+89トライアルのx5を1/1分割目
+89トライアルでの評価値は4.281190474828084、その時のパラメータは[-2.2279342879776225, 4.581609970827987, -1.1330315405354892, 1.4258941343397327, -4.314765673480335, 2.9687568219996168]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+90トライアルのx0を1/1分割目
+90トライアルのx1を1/1分割目
+90トライアルのx2を1/1分割目
+90トライアルのx3を1/1分割目
+90トライアルのx4を1/1分割目
+90トライアルのx5を1/1分割目
+90トライアルでの評価値は4.825969696044922、その時のパラメータは[-2.367344038670177, 4.595526197935916, -1.2892082453176794, 1.363456146097831, -4.336919214610685, 2.8839054464467413]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+91トライアルのx0を1/1分割目
+91トライアルのx1を1/1分割目
+91トライアルのx2を1/1分割目
+91トライアルのx3を1/1分割目
+91トライアルのx4を1/1分割目
+91トライアルのx5を1/1分割目
+91トライアルでの評価値は4.885234991709392、その時のパラメータは[-2.449480884999797, 4.613440956072326, -1.31133371374752, 1.3434676651561697, -4.376954770033225, 2.8074066678816596]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+92トライアルのx0を1/1分割目
+92トライアルのx1を1/1分割目
+92トライアルのx2を1/1分割目
+92トライアルのx3を1/1分割目
+92トライアルのx4を1/1分割目
+92トライアルのx5を1/1分割目
+92トライアルでの評価値は4.920073668162028、その時のパラメータは[-2.5510155082999386, 4.642870637823476, -1.334564938016185, 1.3194891207450445, -4.414658061057484, 2.7180984409769904]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+93トライアルのx0を1/1分割目
+93トライアルのx1を1/1分割目
+93トライアルのx2を1/1分割目
+93トライアルのx3を1/1分割目
+93トライアルのx4を1/1分割目
+93トライアルのx5を1/1分割目
+93トライアルでの評価値は4.7605719566345215、その時のパラメータは[-2.699803361733534, 4.681013456752014, -1.3656113775545329, 1.2901516931266719, -4.451808307257532, 2.6057164608608536]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+94トライアルのx0を1/1分割目
+94トライアルのx1を1/1分割目
+94トライアルのx2を1/1分割目
+94トライアルのx3を1/1分割目
+94トライアルのx4を1/1分割目
+94トライアルのx5を1/1分割目
+94トライアルでの評価値は4.940064907073975、その時のパラメータは[-2.798670769289656, 4.6928432584566195, -1.3740898920016855, 1.2829754758357907, -4.472397269755331, 2.5438875937466414]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+95トライアルのx0を1/1分割目
+95トライアルのx1を1/1分割目
+95トライアルのx2を1/1分割目
+95トライアルのx3を1/1分割目
+95トライアルのx4を1/1分割目
+95トライアルのx5を1/1分割目
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+/nfs/sadstorage-users/skato/work/2023/1212/Hitohudebayes.py:905: ExperimentalWarning: logei_candidates_func is experimental (supported from v3.3.0). The interface can change in the future.
+  candidates = self._candidates_func(
+95トライアルでの評価値は4.911741574605306、その時のパラメータは[-2.9923435682379464, 4.721679893352603, -1.3997849025143818, 1.264466544903864, -4.500410641157167, 2.4453961068507786]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+96トライアルのx0を1/1分割目
+96トライアルのx1を1/1分割目
+96トライアルのx2を1/1分割目
+96トライアルのx3を1/1分割目
+96トライアルのx4を1/1分割目
+96トライアルのx5を1/1分割目
+96トライアルでの評価値は4.360245943069458、その時のパラメータは[-3.1889041482637794, 4.735234975672847, -1.4118127831031315, 1.2583645439273488, -4.5199786792166625, 2.375844157372838]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+97トライアルのx0を1/1分割目
+97トライアルのx1を1/1分割目
+97トライアルのx2を1/1分割目
+97トライアルのx3を1/1分割目
+97トライアルのx4を1/1分割目
+97トライアルのx5を1/1分割目
+97トライアルでの評価値は4.715127786000569、その時のパラメータは[-2.7480684981393306, 4.708249837369003, -1.3881040813738892, 1.2436626033636555, -4.522896244962543, 2.3404849675129857]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+98トライアルのx0を1/1分割目
+98トライアルのx1を1/1分割目
+98トライアルのx2を1/1分割目
+98トライアルのx3を1/1分割目
+98トライアルのx4を1/1分割目
+98トライアルのx5を1/1分割目
+98トライアルでの評価値は4.679398059844971、その時のパラメータは[-2.625704930682613, 4.706537414912222, -1.3979629419093582, 1.2496696799931546, -4.518541867259861, 2.3039118272945283]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+tensor([1., 1., 1., 1., 1., 1.])
+99トライアルのx0を1/1分割目
+99トライアルのx1を1/1分割目
+99トライアルのx2を1/1分割目
+99トライアルのx3を1/1分割目
+99トライアルのx4を1/1分割目
+99トライアルのx5を1/1分割目
+99トライアルでの評価値は4.846528053283691、その時のパラメータは[-2.613552107867724, 4.700172538668491, -1.3787698944330193, 1.2626365039439, -4.49538003809192, 2.3216280467495443]。
+また、最適値は4.965161641438802、その時のパラメータは{'LIiMG:PX_R0_61:IWRITE:KBP': -2.286253121243181, 'LIiMG:PY_R0_61:IWRITE:KBP': 4.492894298322705, 'LIiMG:PX_R0_63:IWRITE:KBP': -1.2647733908144474, 'LIiMG:PY_R0_63:IWRITE:KBP': 1.4558104765293192, 'LIiMG:PX_13_5:IWRITE:KBP': -4.424682705756275, 'LIiMG:PY_13_5:IWRITE:KBP': 2.9376441688671737}
+- Best objective value:4.965161641438802
+- Best 0 parameter: -2.286253121243181
+- Best 1 parameter: 4.492894298322705
+- Best 2 parameter: -1.2647733908144474
+- Best 3 parameter: 1.4558104765293192
+- Best 4 parameter: -4.424682705756275
+- Best 5 parameter: 2.9376441688671737
+4.197176456451416
+8.897596836090088
+13.852107524871826
+Re-get the best objective value to use these parameters : 4.617369174957275
+    Trial  evaluate_value  peakhold  ...     x3max     x4max     x5max
+0       0        1.849019  1.849019  ...  3.026780 -7.839731  5.525362
+1       1        1.304736  1.849019  ...  3.026780 -7.839731  5.525362
+2       2        1.478115  1.849019  ...  3.026780 -7.839731  5.525362
+3       3        0.883329  1.849019  ...  3.026780 -7.839731  5.525362
+4       4        2.200369  2.200369  ...  0.843908 -5.513798  1.289647
+..    ...             ...       ...  ...       ...       ...       ...
+95     95        4.911742  4.965162  ...  1.455810 -4.424683  2.937644
+96     96        4.360246  4.965162  ...  1.455810 -4.424683  2.937644
+97     97        4.715128  4.965162  ...  1.455810 -4.424683  2.937644
+98     98        4.679398  4.965162  ...  1.455810 -4.424683  2.937644
+99     99        4.846528  4.965162  ...  1.455810 -4.424683  2.937644
+
+[100 rows x 15 columns]

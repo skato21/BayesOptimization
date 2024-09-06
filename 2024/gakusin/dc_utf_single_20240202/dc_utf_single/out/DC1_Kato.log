@@ -1,0 +1,395 @@
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022/Debian) (preloaded format=platex 2024.4.5)  19 APR 2024 13:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/skato/work/2024/gakusin/dc_utf_single_20240202/dc_utf_single/DC1_Kato.tex
+(/home/skato/work/2024/gakusin/dc_utf_single_20240202/dc_utf_single/DC1_Kato.tex
+pLaTeX2e <2021-11-15>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2020/09/30 v1.8f Standard pLaTeX class
+\c@@paper=\count184
+(/usr/share/texlive/texmf-dist/tex/platex/base/jsize11.clo
+File: jsize11.clo 2020/09/30 v1.8f Standard pLaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 615.
+\toclineskip=\dimen156
+\@lnumwidth=\dimen157
+\bibindent=\dimen158
+\heisei=\count193
+) (./pieces/form00_header.tex (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count194
+\calc@Bcount=\count195
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count196
+\calc@Cskip=\skip52
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
+\Gm@dimlist=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen169
+\Gin@req@width=\dimen170
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvipdfmx.def on input line 149.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (./udline.sty
+Package: udline 2005/01/28 下線マクロ ver2.52：ロードします
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen171
+\ar@mcellbox=\box68
+\extrarowheight=\dimen172
+\NC@list=\toks19
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box69
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count266
+\LTcapwidth=\dimen173
+\LT@head=\box70
+\LT@firsthead=\box71
+\LT@foot=\box72
+\LT@lastfoot=\box73
+\LT@gbox=\box74
+\LT@cols=\count267
+\LT@rows=\count268
+\c@LT@tables=\count269
+\c@LT@chunks=\count270
+\LT@p@ftn=\toks20
+)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+) (./pieces/kakenhi7.tex
+\Numa=\count271
+\Numb=\count272
+\c@kyen=\count273
+\c@KLtmp=\count274
+\c@KLCost=\count275
+\c@KLGrandTotalValue=\count276
+\c@KLYearCount=\count277
+\c@KLPrintYear=\count278
+\c@KLequipments0=\count279
+\c@KLequipments1=\count280
+\c@KLequipments2=\count281
+\c@KLequipments3=\count282
+\c@KLequipments4=\count283
+\c@KLequipments5=\count284
+\c@KLequipments6=\count285
+\c@KLequipments7=\count286
+\c@KLexpendables0=\count287
+\c@KLexpendables1=\count288
+\c@KLexpendables2=\count289
+\c@KLexpendables3=\count290
+\c@KLexpendables4=\count291
+\c@KLexpendables5=\count292
+\c@KLexpendables6=\count293
+\c@KLexpendables7=\count294
+\c@KLdomestic0=\count295
+\c@KLdomestic1=\count296
+\c@KLdomestic2=\count297
+\c@KLdomestic3=\count298
+\c@KLdomestic4=\count299
+\c@KLdomestic5=\count300
+\c@KLdomestic6=\count301
+\c@KLdomestic7=\count302
+\c@KLforeign0=\count303
+\c@KLforeign1=\count304
+\c@KLforeign2=\count305
+\c@KLforeign3=\count306
+\c@KLforeign4=\count307
+\c@KLforeign5=\count308
+\c@KLforeign6=\count309
+\c@KLforeign7=\count310
+\c@KLtravel0=\count311
+\c@KLtravel1=\count312
+\c@KLtravel2=\count313
+\c@KLtravel3=\count314
+\c@KLtravel4=\count315
+\c@KLtravel5=\count316
+\c@KLtravel6=\count317
+\c@KLtravel7=\count318
+\c@KLgratitude0=\count319
+\c@KLgratitude1=\count320
+\c@KLgratitude2=\count321
+\c@KLgratitude3=\count322
+\c@KLgratitude4=\count323
+\c@KLgratitude5=\count324
+\c@KLgratitude6=\count325
+\c@KLgratitude7=\count326
+\c@KLmisc0=\count327
+\c@KLmisc1=\count328
+\c@KLmisc2=\count329
+\c@KLmisc3=\count330
+\c@KLmisc4=\count331
+\c@KLmisc5=\count332
+\c@KLmisc6=\count333
+\c@KLmisc7=\count334
+\c@KLAnnualSum0=\count335
+\c@KLAnnualSum1=\count336
+\c@KLAnnualSum2=\count337
+\c@KLAnnualSum3=\count338
+\c@KLAnnualSum4=\count339
+\c@KLAnnualSum5=\count340
+\c@KLAnnualSum6=\count341
+\c@KLAnnualSum7=\count342
+\c@KLSubjectEndPage=\count343
+\KLFWHOffset=\skip68
+\KLLineLength=\skip69
+\c@KLBibCounter=\count344
+) (./pieces/form01_dcpd_header.tex
+\KLCella=\skip70
+\KLCellb=\skip71
+\KLCellc=\skip72
+\KLCelld=\skip73
+\KLCelle=\skip74
+\KLCellf=\skip75
+\c@KLMaxYearCount=\count345
+) (./pieces/hook3.tex) (./pieces/form03_dcpd_headers.tex) (./pieces/form04_dc_header.tex) (./pieces/inst_general_images.tex) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen174
+\WF@size=\dimen175
+\c@WF@wrappedlines=\count346
+\WF@box=\box75
+\WF@everypar=\toks21
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/01/19 line numbers on paragraphs v5.1
+\linenopenalty=\count347
+\output=\toks22
+\linenoprevgraf=\count348
+\linenumbersep=\dimen176
+\linenumberwidth=\dimen177
+\c@linenumber=\count349
+\c@pagewiselinenumber=\count350
+\c@LN@truepage=\count351
+\c@internallinenumber=\count352
+\c@internallinenumbers=\count353
+\quotelinenumbersep=\dimen178
+\bframerule=\dimen179
+\bframesep=\dimen180
+\bframebox=\box76
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count354
+)
+LaTeX Info: Redefining \\ on input line 3131.
+) (./pieces/hook5.tex) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
+File: l3backend-dvipdfmx.def 2023-01-16 L3 backend support: dvipdfmx
+\g__graphics_track_int=\count355
+\l__pdf_internal_box=\box77
+\g__pdf_backend_object_int=\count356
+\g__pdf_backend_annotation_int=\count357
+\g__pdf_backend_link_int=\count358
+) (out/DC1_Kato.aux)
+\openout1 = `DC1_Kato.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+*geometry* detected driver: dvipdfm
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvipdfm
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=496.0pt
+* \textheight=722.7pt
+* \oddsidemargin=-22.0pt
+* \evensidemargin=-22.0pt
+* \topmargin=-67.0pt
+* \headheight=48.0pt
+* \headsep=3.0pt
+* \topskip=8.51457pt
+* \footskip=30.0pt
+* \marginparwidth=60.0pt
+* \marginparsep=10.0pt
+* \columnsep=21.07251pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./pieces/hook7.tex) (./pieces/p01_background_00.tex
+File: subject_headers/dc_header_01.pdf Graphic file (type pdf)
+<subject_headers/dc_header_01.pdf>
+)
+Overfull \hbox (51.23788pt too wide) in paragraph at lines 2--65
+ []
+ []
+
+(./pieces/p01_background_01.tex
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
+(Font)              size <10.95> substituted on input line 2.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+[3
+
+]) (./pieces/p02_purpose_plan_00.tex
+File: subject_headers/dc_header_02.pdf Graphic file (type pdf)
+<subject_headers/dc_header_02.pdf>
+)
+Overfull \hbox (51.23788pt too wide) in paragraph at lines 2--82
+ []
+ []
+
+(./pieces/p02_purpose_plan_01.tex [4
+
+] [5
+
+]) (./pieces/p03_rights_00.tex
+File: subject_headers/dc_header_03.pdf Graphic file (type pdf)
+<subject_headers/dc_header_03.pdf>
+)
+Overfull \hbox (51.23788pt too wide) in paragraph at lines 2--101
+ []
+ []
+
+(./pieces/p03_rights_01.tex [6
+
+]) (./pieces/p04_abilities_00.tex
+File: subject_headers/dc_header_04.pdf Graphic file (type pdf)
+<subject_headers/dc_header_04.pdf>
+)
+Overfull \hbox (51.23788pt too wide) in paragraph at lines 2--116
+ []
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 120.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 120.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 126.
+(./pieces/p04_abilities_01.tex [7
+
+] [8
+
+]) (./pieces/p05_my_ambitions_00.tex
+File: subject_headers/dc_header_05.pdf Graphic file (type pdf)
+<subject_headers/dc_header_05.pdf>
+)
+Overfull \hbox (51.23788pt too wide) in paragraph at lines 2--151
+ []
+ []
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 154.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 154.
+(./pieces/p05_my_ambitions_01.tex [9
+
+]) (./pieces/hook9.tex) (out/DC1_Kato.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.45pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3553 strings out of 476550
+ 55691 string characters out of 5805610
+ 1854340 words of memory out of 5000000
+ 24084 multiletter control sequences out of 15000+600000
+ 522617 words of font info for 73 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 62i,13n,65p,308b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on out/DC1_Kato.dvi (7 pages, 5592 bytes).

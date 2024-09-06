@@ -1,0 +1,9 @@
+# ROOT LIBRARY
+ROOTSYS    := ${HOME}/local/src/root/obj
+ROOTCFLAGS := $(shell $(ROOTSYS)/bin/root-config --cflags) -I/usr/include/eigen3 -DUSE_BOOST -DUSE_EIGEN -DUSE_NLOPT -DUSE_LIBCMAES
+ROOTGLIBS  := $(shell $(ROOTSYS)/bin/root-config --libs)
+
+# HPC LIBRARY
+LOCALSYS := ${HOME}/local
+HPCFLAGS := -I${LOCALSYS}/include -I${HOME}/local/src/bayesopt/utils
+HPCLIBS  := -L${LOCALSYS}/lib -lboost_program_options -lboost_filesystem -lboost_timer -lboost_chrono -lboost_thread -larmadillo -L${HOME}/local/lib64 -lnlopt -L ${LOCALSYS}/src/epics/base/lib/linux-x86_64 -lca -lCom

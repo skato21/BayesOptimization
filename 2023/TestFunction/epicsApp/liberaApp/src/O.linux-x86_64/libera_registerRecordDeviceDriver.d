@@ -1,0 +1,23 @@
+libera_registerRecordDeviceDriver.o: \
+ libera_registerRecordDeviceDriver.cpp \
+ /home/skato/local/src/epics/base/include/compilerDependencies.h \
+ /home/skato/local/src/epics/base/include/compiler/gcc/compilerSpecific.h \
+ /home/skato/local/src/epics/base/include/epicsStdlib.h \
+ /home/skato/local/src/epics/base/include/shareLib.h \
+ /home/skato/local/src/epics/base/include/os/Linux/osdStrtod.h \
+ /home/skato/local/src/epics/base/include/epicsTypes.h \
+ /home/skato/local/src/epics/base/include/compilerDependencies.h \
+ /home/skato/local/src/epics/base/include/errMdef.h \
+ /home/skato/local/src/epics/base/include/iocsh.h \
+ /home/skato/local/src/epics/base/include/iocshRegisterCommon.h \
+ /home/skato/local/src/epics/base/include/registryCommon.h \
+ /home/skato/local/src/epics/base/include/dbStaticLib.h \
+ /home/skato/local/src/epics/base/include/dbFldTypes.h \
+ /home/skato/local/src/epics/base/include/dbBase.h \
+ /home/skato/local/src/epics/base/include/ellLib.h \
+ /home/skato/local/src/epics/base/include/dbDefs.h \
+ /home/skato/local/src/epics/base/include/link.h \
+ /home/skato/local/src/epics/base/include/cantProceed.h \
+ /home/skato/local/src/epics/base/include/devSup.h \
+ /home/skato/local/src/epics/base/include/registryRecordType.h \
+ /home/skato/local/src/epics/base/include/recSup.h
