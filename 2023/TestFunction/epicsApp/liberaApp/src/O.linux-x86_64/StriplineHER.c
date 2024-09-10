@@ -19,15 +19,11 @@
 #include <unistd.h>
 # line 9 "../StriplineHER.stt"
 #include "MT.h"
-# line 28 "../StriplineHER.stt"
+# line 24 "../StriplineHER.stt"
 
   double x0;
   double x1;
   double y;
-  double th0;
-  double lm0;
-  double lm1;
-  double lm2;
 
   double Uniform(void)
   {
@@ -36,7 +32,7 @@
 
   double rand_Lnormal(double mu, double sigma)
   {
-    double y= mu + sigma*sqrt(-2.0*log(Uniform()))*sin(2.0*M_PI*Uniform());//gauss random number
+    double y = mu + sigma*sqrt(-2.0*log(Uniform()))*sin(2.0*M_PI*Uniform()); //gauss random number
     return y;
   }
 
@@ -47,15 +43,11 @@ static	double X0;
 # line 11 "../StriplineHER.stt"
 static	double X1;
 # line 11 "../StriplineHER.stt"
-static	double Y;
+static	double Y0;
 # line 11 "../StriplineHER.stt"
-static	double TH0;
+static	double C0;
 # line 11 "../StriplineHER.stt"
-static	double LM0;
-# line 11 "../StriplineHER.stt"
-static	double LM1;
-# line 11 "../StriplineHER.stt"
-static	double LM2;
+static	double G0;
 
 
 /* Function declarations */
@@ -67,10 +59,10 @@ static void seqg_init(PROG_ID seqg_env)
 {
 }
 
-/****** Code for state "init" in state set "her_stripline" ******/
+/****** Code for state "init" in state set "her_efficiency" ******/
 
-/* Event function for state "init" in state set "her_stripline" */
-static seqBool seqg_event_her_stripline_0_init(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
+/* Event function for state "init" in state set "her_efficiency" */
+static seqBool seqg_event_her_efficiency_0_init(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
 {
 	if (TRUE)
 	{
@@ -81,19 +73,19 @@ static seqBool seqg_event_her_stripline_0_init(SS_ID seqg_env, int *seqg_ptrn, i
 	return FALSE;
 }
 
-/* Action function for state "init" in state set "her_stripline" */
-static void seqg_action_her_stripline_0_init(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
+/* Action function for state "init" in state set "her_efficiency" */
+static void seqg_action_her_efficiency_0_init(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
 {
 	switch(seqg_trn)
 	{
 	case 0:
 		{
-# line 55 "../StriplineHER.stt"
+# line 47 "../StriplineHER.stt"
 			seq_pvGetTmo(seqg_env, 0/*X0*/, DEFAULT, DEFAULT_TIMEOUT);
-# line 56 "../StriplineHER.stt"
+# line 48 "../StriplineHER.stt"
 			seq_pvGetTmo(seqg_env, 1/*X1*/, DEFAULT, DEFAULT_TIMEOUT);
-# line 58 "../StriplineHER.stt"
-			printf("StriplineHER initialization done.\n");
+# line 50 "../StriplineHER.stt"
+			printf("her_efficiency initialization done.\n");
 			
         init_genrand((unsigned)time(NULL));
       
@@ -102,10 +94,10 @@ static void seqg_action_her_stripline_0_init(SS_ID seqg_env, int seqg_trn, int *
 	}
 }
 
-/****** Code for state "fit" in state set "her_stripline" ******/
+/****** Code for state "efficiency" in state set "her_efficiency" ******/
 
-/* Event function for state "fit" in state set "her_stripline" */
-static seqBool seqg_event_her_stripline_0_fit(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
+/* Event function for state "efficiency" in state set "her_efficiency" */
+static seqBool seqg_event_her_efficiency_0_efficiency(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
 {
 	if (TRUE)
 	{
@@ -116,54 +108,105 @@ static seqBool seqg_event_her_stripline_0_fit(SS_ID seqg_env, int *seqg_ptrn, in
 	return FALSE;
 }
 
-/* Action function for state "fit" in state set "her_stripline" */
-static void seqg_action_her_stripline_0_fit(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
+/* Action function for state "efficiency" in state set "her_efficiency" */
+static void seqg_action_her_efficiency_0_efficiency(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
 {
 	switch(seqg_trn)
 	{
 	case 0:
 		{
-# line 71 "../StriplineHER.stt"
+# line 63 "../StriplineHER.stt"
 			x0 = X0;
-# line 72 "../StriplineHER.stt"
+# line 64 "../StriplineHER.stt"
 			x1 = X1;
 			
-        // Calculate the function value for Y
-        y = pow(X1 - 5.1/(4.*pow(M_PI,2.)) * pow(X0,2.) + 5./M_PI * X0 - 6., 2.) + 10 * (1. - 1./(8.*M_PI)) * cos(X0) + 10. 
-        + rand_Lnormal(0., 1.e-3);
+	y = pow(X1 - 5.1/(4.*pow(M_PI,2.)) * pow(X0,2.) + 5./M_PI * X0 - 6., 2.) + 10 * (1. - 1./(8.*M_PI)) * cos(X0) + 10. 
+  + rand_Lnormal(0., 1.e-3);
       
-# line 80 "../StriplineHER.stt"
-			Y = y;
-# line 81 "../StriplineHER.stt"
-			seq_pvPutTmo(seqg_env, 2/*Y*/, DEFAULT, DEFAULT_TIMEOUT);
+# line 71 "../StriplineHER.stt"
+			Y0 = 200 - y;
+# line 72 "../StriplineHER.stt"
+			seq_pvPutTmo(seqg_env, 2/*Y0*/, DEFAULT, DEFAULT_TIMEOUT);
 			
-        // Calculate the expected y value on the line for the given x0
-        double expected_y = x0 + 5;
-
-        // Calculate the distance from the point (x0, x1) to the line y = x + 5
-        double distance_to_line = fabs(x1 - expected_y) / sqrt(1 + pow(1, 2));
-
-        // Update LM0 based on the distance
-        lm0 = distance_to_line + rand_Lnormal(0., 1.e-0);
+	usleep(100000);
       
-# line 94 "../StriplineHER.stt"
-			LM0 = lm0;
-# line 95 "../StriplineHER.stt"
-			seq_pvPutTmo(seqg_env, 4/*LM0*/, DEFAULT, DEFAULT_TIMEOUT);
+		}
+		return;
+	}
+}
+
+/****** Code for state "init" in state set "her_lm" ******/
+
+/* Event function for state "init" in state set "her_lm" */
+static seqBool seqg_event_her_lm_1_init(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
+{
+	if (TRUE)
+	{
+		*seqg_pnst = 1;
+		*seqg_ptrn = 0;
+		return TRUE;
+	}
+	return FALSE;
+}
+
+/* Action function for state "init" in state set "her_lm" */
+static void seqg_action_her_lm_1_init(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
+{
+	switch(seqg_trn)
+	{
+	case 0:
+		{
+# line 88 "../StriplineHER.stt"
+			printf("her_lm initialization done.\n");
+		}
+		return;
+	}
+}
+
+/****** Code for state "lm" in state set "her_lm" ******/
+
+/* Event function for state "lm" in state set "her_lm" */
+static seqBool seqg_event_her_lm_1_lm(SS_ID seqg_env, int *seqg_ptrn, int *seqg_pnst)
+{
+	if (TRUE)
+	{
+		*seqg_pnst = 1;
+		*seqg_ptrn = 0;
+		return TRUE;
+	}
+	return FALSE;
+}
+
+/* Action function for state "lm" in state set "her_lm" */
+static void seqg_action_her_lm_1_lm(SS_ID seqg_env, int seqg_trn, int *seqg_pnst)
+{
+	switch(seqg_trn)
+	{
+	case 0:
+		{
 # line 97 "../StriplineHER.stt"
-			TH0 = rand_Lnormal(0., 1.e-3);
+			G0 = rand_Lnormal(1.e-1, 3.e-2);
 # line 98 "../StriplineHER.stt"
-			LM1 = rand_Lnormal(0., 1.e-3);
-# line 99 "../StriplineHER.stt"
-			LM2 = rand_Lnormal(0., 1.e-3);
+			if (G0 < 8.e-2)
+			{
 # line 100 "../StriplineHER.stt"
-			seq_pvPutTmo(seqg_env, 3/*TH0*/, DEFAULT, DEFAULT_TIMEOUT);
+				C0 = 0.;
 # line 101 "../StriplineHER.stt"
-			seq_pvPutTmo(seqg_env, 5/*LM1*/, DEFAULT, DEFAULT_TIMEOUT);
-# line 102 "../StriplineHER.stt"
-			seq_pvPutTmo(seqg_env, 6/*LM2*/, DEFAULT, DEFAULT_TIMEOUT);
+				G0 = 0.;
+			}
+			else
+			{
+# line 105 "../StriplineHER.stt"
+				C0 = 1. - exp(-pow(x0 - M_PI, 2.) / 10. - pow(x1 - 2.275, 2.) / 10.) + rand_Lnormal(1.e-2, 1.e-2);
+# line 106 "../StriplineHER.stt"
+				G0 = 1.;
+			}
+# line 109 "../StriplineHER.stt"
+			seq_pvPutTmo(seqg_env, 3/*C0*/, DEFAULT, DEFAULT_TIMEOUT);
+# line 110 "../StriplineHER.stt"
+			seq_pvPutTmo(seqg_env, 4/*G0*/, DEFAULT, DEFAULT_TIMEOUT);
 			
-        usleep(100000);
+	usleep(500000);
       
 		}
 		return;
@@ -179,39 +222,67 @@ static seqChan seqg_chans[] = {
 	/* chName, offset, varName, varType, count, eventNum, efId, monitored, queueSize, queueIndex */
 	{"TEST:X0", (size_t)&X0, "X0", P_DOUBLE, 1, 1, 0, 1, 0, 0},
 	{"TEST:X1", (size_t)&X1, "X1", P_DOUBLE, 1, 2, 0, 1, 0, 0},
-	{"TEST:Y", (size_t)&Y, "Y", P_DOUBLE, 1, 3, 0, 0, 0, 0},
-	{"TEST:TH0", (size_t)&TH0, "TH0", P_DOUBLE, 1, 4, 0, 1, 0, 0},
-	{"TEST:LM0", (size_t)&LM0, "LM0", P_DOUBLE, 1, 5, 0, 1, 0, 0},
-	{"TEST:LM1", (size_t)&LM1, "LM1", P_DOUBLE, 1, 6, 0, 1, 0, 0},
-	{"TEST:LM2", (size_t)&LM2, "LM2", P_DOUBLE, 1, 7, 0, 1, 0, 0},
+	{"TEST:Y0", (size_t)&Y0, "Y0", P_DOUBLE, 1, 3, 0, 0, 0, 0},
+	{"TEST:C0", (size_t)&C0, "C0", P_DOUBLE, 1, 4, 0, 1, 0, 0},
+	{"TEST:G0", (size_t)&G0, "G0", P_DOUBLE, 1, 5, 0, 1, 0, 0},
 };
 
-/* Event masks for state set "her_stripline" */
-static const seqMask seqg_mask_her_stripline_0_init[] = {
+/* Event masks for state set "her_efficiency" */
+static const seqMask seqg_mask_her_efficiency_0_init[] = {
 	0x00000000,
 };
-static const seqMask seqg_mask_her_stripline_0_fit[] = {
+static const seqMask seqg_mask_her_efficiency_0_efficiency[] = {
 	0x00000000,
 };
 
-/* State table for state set "her_stripline" */
-static seqState seqg_states_her_stripline[] = {
+/* State table for state set "her_efficiency" */
+static seqState seqg_states_her_efficiency[] = {
 	{
 	/* state name */        "init",
-	/* action function */   seqg_action_her_stripline_0_init,
-	/* event function */    seqg_event_her_stripline_0_init,
+	/* action function */   seqg_action_her_efficiency_0_init,
+	/* event function */    seqg_event_her_efficiency_0_init,
 	/* entry function */    0,
 	/* exit function */     0,
-	/* event mask array */  seqg_mask_her_stripline_0_init,
+	/* event mask array */  seqg_mask_her_efficiency_0_init,
 	/* state options */     (0)
 	},
 	{
-	/* state name */        "fit",
-	/* action function */   seqg_action_her_stripline_0_fit,
-	/* event function */    seqg_event_her_stripline_0_fit,
+	/* state name */        "efficiency",
+	/* action function */   seqg_action_her_efficiency_0_efficiency,
+	/* event function */    seqg_event_her_efficiency_0_efficiency,
 	/* entry function */    0,
 	/* exit function */     0,
-	/* event mask array */  seqg_mask_her_stripline_0_fit,
+	/* event mask array */  seqg_mask_her_efficiency_0_efficiency,
+	/* state options */     (0)
+	},
+};
+
+/* Event masks for state set "her_lm" */
+static const seqMask seqg_mask_her_lm_1_init[] = {
+	0x00000000,
+};
+static const seqMask seqg_mask_her_lm_1_lm[] = {
+	0x00000000,
+};
+
+/* State table for state set "her_lm" */
+static seqState seqg_states_her_lm[] = {
+	{
+	/* state name */        "init",
+	/* action function */   seqg_action_her_lm_1_init,
+	/* event function */    seqg_event_her_lm_1_init,
+	/* entry function */    0,
+	/* exit function */     0,
+	/* event mask array */  seqg_mask_her_lm_1_init,
+	/* state options */     (0)
+	},
+	{
+	/* state name */        "lm",
+	/* action function */   seqg_action_her_lm_1_lm,
+	/* event function */    seqg_event_her_lm_1_lm,
+	/* entry function */    0,
+	/* exit function */     0,
+	/* event mask array */  seqg_mask_her_lm_1_lm,
 	/* state options */     (0)
 	},
 };
@@ -219,8 +290,14 @@ static seqState seqg_states_her_stripline[] = {
 /* State set table */
 static seqSS seqg_statesets[] = {
 	{
-	/* state set name */    "her_stripline",
-	/* states */            seqg_states_her_stripline,
+	/* state set name */    "her_efficiency",
+	/* states */            seqg_states_her_efficiency,
+	/* number of states */  2
+	},
+
+	{
+	/* state set name */    "her_lm",
+	/* states */            seqg_states_her_lm,
 	/* number of states */  2
 	},
 };
@@ -230,9 +307,9 @@ seqProgram StriplineHER = {
 	/* magic number */      2002008,
 	/* program name */      "StriplineHER",
 	/* channels */          seqg_chans,
-	/* num. channels */     7,
+	/* num. channels */     5,
 	/* state sets */        seqg_statesets,
-	/* num. state sets */   1,
+	/* num. state sets */   2,
 	/* user var size */     0,
 	/* param */             "",
 	/* num. event flags */  0,

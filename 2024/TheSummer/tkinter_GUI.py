@@ -93,7 +93,7 @@ class App:
         tk.Button(controls_frame, text="Restart").grid(row=1, column=3)
         tk.Button(controls_frame, text="Set Best and Finish").grid(row=1, column=4)
         
-        # グラフのためのキャンバス (タブの画面いっぱいに広げる)
+        # グラフのためのキャンバス
         self.canvas = tk.Canvas(frame, bg="white")
         self.canvas.pack(fill='both', expand=True, pady=20)
         
